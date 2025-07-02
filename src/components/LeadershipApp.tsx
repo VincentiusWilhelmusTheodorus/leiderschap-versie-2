@@ -15,7 +15,7 @@ const theories: Theory[] = [
   {
     id: 'mintzberg',
     title: 'Mintzberg\'s Managementrollen',
-    description: 'De 10 rollen die elke manager vervult, verdeeld over interpersoonlijke, informationele en beslissingsrollen.',
+    description: 'De 10 rollen die elke manager vervult, verdeeld over interpersoonlijke, informationele en besluitvormingsrollen.',
     content: {
       categories: [
         {
@@ -48,12 +48,12 @@ const theories: Theory[] = [
             },
             {
               name: 'Woordvoerder',
-              description: 'Organisatie vertegenwoordigen naar buiten toe'
+              description: 'Organisatie vertegenwoordigen naar buiten'
             }
           ]
         },
         {
-          name: 'Beslissingsrollen',
+          name: 'Besluitvormingsrollen',
           roles: [
             {
               name: 'Ondernemer',
@@ -65,37 +65,37 @@ const theories: Theory[] = [
             },
             {
               name: 'Hulpbronnenverdeler',
-              description: 'Beslissen over de verdeling van middelen'
+              description: 'Beslissen over toewijzing van middelen'
             },
             {
               name: 'Onderhandelaar',
-              description: 'Namens de organisatie onderhandelen'
+              description: 'Namens organisatie onderhandelen'
             }
           ]
         }
       ],
-      sportExample: 'Een voetbaltrainer vervult alle rollen: als boegbeeld bij persconferenties, als leider van het team, als contactpersoon met de clubleiding, als waarnemer van tegenstanders, als verspreider van tactische informatie, als woordvoerder naar de media, als ondernemer bij nieuwe trainingsmethoden, als probleemoplosser bij blessures, als hulpbronnenverdeler van speeltijd, en als onderhandelaar bij transfers.'
+      sportExample: 'Een voetbaltrainer vervult alle rollen: als boegbeeld bij persconferenties, als leider van het team, als waarnemer van tegenstanders, als woordvoerder naar de media, en als onderhandelaar bij transfers.'
     }
   },
   {
     id: 'hersey-blanchard',
     title: 'Situationeel Leidinggeven (SLII)',
-    description: 'Hersey & Blanchard\'s model dat leiderschapsstijl aanpast aan het ontwikkelingsniveau van de medewerker.',
+    description: 'Het aanpassen van je leiderschapsstijl aan het ontwikkelingsniveau van je teamleden voor specifieke taken.',
     content: {
       introduction: {
         title: 'Wat is Situationeel Leidinggeven?',
-        description: 'Situationeel Leidinggeven (SLII) is gebaseerd op het idee dat er geen beste leiderschapsstijl bestaat. De effectiviteit van een leiderschapsstijl hangt af van de situatie, specifiek het ontwikkelingsniveau van de persoon voor een bepaalde taak.',
-        keyInsight: 'De sleutel tot effectief leiderschap is flexibiliteit - verschillende mensen en situaties vereisen verschillende benaderingen.'
+        description: 'Situationeel Leidinggeven (SLII) is gebaseerd op het idee dat er geen beste leiderschapsstijl bestaat. De effectiviteit van een leiderschapsstijl hangt af van de situatie en het ontwikkelingsniveau van de persoon.',
+        keyInsight: 'De sleutel tot effectief leiderschap is flexibiliteit - het aanpassen van je stijl aan wat de situatie en de persoon nodig heeft.'
       },
       coreModel: {
         title: 'Het SLII Model',
-        description: 'Het model combineert twee gedragsdimensies van leiders om vier verschillende leiderschapsstijlen te creëren:',
+        description: 'Het model combineert twee gedragsdimensies om vier verschillende leiderschapsstijlen te creëren:',
         dimensions: [
           {
             name: 'Sturend Gedrag',
-            description: 'Eenrichtingscommunicatie waarin de leider definieert wat, hoe, wanneer en waar taken uitgevoerd moeten worden.',
+            description: 'Eenrichtingscommunicatie waarbij de leider duidelijke instructies geeft',
             characteristics: [
-              'Duidelijke instructies geven',
+              'Specifieke instructies geven',
               'Taken en rollen definiëren',
               'Nauw toezicht houden',
               'Deadlines stellen'
@@ -103,12 +103,12 @@ const theories: Theory[] = [
           },
           {
             name: 'Ondersteunend Gedrag',
-            description: 'Tweerichtingscommunicatie waarin de leider luistert, ondersteunt, faciliteert en betrokkenheid stimuleert.',
+            description: 'Tweerichtingscommunicatie waarbij de leider luistert en ondersteunt',
             characteristics: [
               'Actief luisteren',
-              'Emotionele ondersteuning bieden',
-              'Faciliteren van probleemoplossing',
-              'Betrokkenheid stimuleren'
+              'Faciliteren en ondersteunen',
+              'Betrekken bij besluitvorming',
+              'Aanmoedigen en motiveren'
             ]
           }
         ]
@@ -119,13 +119,13 @@ const theories: Theory[] = [
           competence: 'Laag',
           commitment: 'Hoog',
           characteristics: [
+            'Weinig specifieke vaardigheden voor de taak',
             'Hoge motivatie en enthousiasme',
-            'Weinig specifieke vaardigheden',
-            'Optimistisch over de taak',
-            'Bereid om te leren'
+            'Bereid om te leren',
+            'Overschat soms eigen kunnen'
           ],
-          needs: 'Veel sturing en duidelijke instructies, maar weinig emotionele ondersteuning omdat motivatie al hoog is.',
-          sportExample: 'Een nieuwe speler die net bij het team komt - super gemotiveerd maar moet nog alle systemen en tactieken leren.'
+          needs: 'Veel sturing en duidelijke instructies, weinig ondersteuning nodig vanwege hoge motivatie',
+          sportExample: 'Een nieuwe speler die net bij het team komt - gemotiveerd maar heeft nog veel te leren over de tactiek en teamcultuur.'
         },
         {
           level: 'D2 - Ontgoochelde Leerling',
@@ -133,12 +133,12 @@ const theories: Theory[] = [
           commitment: 'Laag',
           characteristics: [
             'Heeft wat ervaring opgedaan',
-            'Realiseert dat het moeilijker is dan gedacht',
-            'Gefrustreerd door tegenslagen',
-            'Twijfelt aan eigen kunnen'
+            'Realiseert zich dat het moeilijker is dan gedacht',
+            'Motivatie en vertrouwen zijn gedaald',
+            'Kan gefrustreerd of ontmoedigd zijn'
           ],
-          needs: 'Zowel veel sturing (voor competentie) als veel ondersteuning (voor motivatie en vertrouwen).',
-          sportExample: 'Een speler die na een paar maanden merkt dat het niveau hoger ligt dan verwacht en begint te twijfelen aan zijn kunnen.'
+          needs: 'Zowel veel sturing als veel ondersteuning - coaching om door de moeilijke periode te komen',
+          sportExample: 'Een speler die na een paar maanden merkt dat het niveau hoger is dan verwacht en twijfelt aan eigen kunnen.'
         },
         {
           level: 'D3 - Voorzichtige Uitvoerder',
@@ -146,79 +146,79 @@ const theories: Theory[] = [
           commitment: 'Variabel',
           characteristics: [
             'Heeft de vaardigheden ontwikkeld',
-            'Twijfelt aan eigen vermogen om zelfstandig te werken',
-            'Zoekt bevestiging',
-            'Voorzichtig met nieuwe uitdagingen'
+            'Twijfelt aan eigen kunnen of motivatie',
+            'Wil meer verantwoordelijkheid maar is onzeker',
+            'Heeft vertrouwen en ondersteuning nodig'
           ],
-          needs: 'Weinig sturing (heeft de vaardigheden) maar veel ondersteuning (voor vertrouwen en motivatie).',
-          sportExample: 'Een ervaren speler die technisch goed is maar twijfelt of hij wel aanvoerder kan zijn of belangrijke penalty\'s kan nemen.'
+          needs: 'Weinig sturing maar veel ondersteuning - vertrouwen opbouwen en motiveren',
+          sportExample: 'Een ervaren speler die technisch goed is maar twijfelt of hij wel geschikt is voor een leidersrol in het team.'
         },
         {
           level: 'D4 - Zelfstandige Uitvoerder',
           competence: 'Hoog',
           commitment: 'Hoog',
           characteristics: [
-            'Hoge competentie en motivatie',
+            'Heeft zowel vaardigheden als motivatie',
             'Kan zelfstandig werken',
             'Neemt verantwoordelijkheid',
-            'Zoekt nieuwe uitdagingen'
+            'Heeft vertrouwen in eigen kunnen'
           ],
-          needs: 'Weinig sturing en weinig ondersteuning - kan zelfstandig functioneren.',
+          needs: 'Weinig sturing en weinig ondersteuning - kan gedelegeerd worden',
           sportExample: 'Een ervaren aanvoerder die zowel technisch uitstekend is als het team kan motiveren en leiden.'
         }
       ],
       leadershipStyles: [
         {
           style: 'S1 - Sturend',
-          behavior: 'Hoog Sturend, Laag Ondersteunend',
+          behavior: 'Hoog sturend, laag ondersteunend',
           when: 'Voor D1 - Enthousiaste Beginner',
-          description: 'De leider geeft duidelijke instructies en houdt nauw toezicht. Weinig ruimte voor inbreng van de medewerker.',
+          description: 'De leider geeft specifieke instructies en houdt nauw toezicht.',
           approach: [
-            'Specifieke instructies geven',
-            'Taken stap voor stap uitleggen',
-            'Regelmatig controleren',
-            'Duidelijke verwachtingen stellen'
+            'Duidelijke instructies geven',
+            'Taken en procedures uitleggen',
+            'Nauw toezicht houden',
+            'Weinig ruimte voor eigen inbreng'
           ],
-          sportExample: 'Een trainer die een nieuwe speler exact uitlegt hoe het systeem werkt, welke posities hij moet innemen en wat zijn taken zijn.'
+          sportExample: 'Een trainer die een nieuwe speler stap-voor-stap de tactiek uitlegt en precies vertelt wat hij moet doen.'
         },
         {
           style: 'S2 - Coachend',
-          behavior: 'Hoog Sturend, Hoog Ondersteunend',
+          behavior: 'Hoog sturend, hoog ondersteunend',
           when: 'Voor D2 - Ontgoochelde Leerling',
-          description: 'De leider geeft nog steeds veel sturing maar biedt ook emotionele ondersteuning en luistert naar zorgen.',
+          description: 'De leider geeft nog steeds veel sturing maar ook veel ondersteuning en uitleg.',
           approach: [
-            'Uitleggen waarom dingen gedaan moeten worden',
-            'Luisteren naar zorgen en frustraties',
-            'Vertrouwen opbouwen',
-            'Kleine successen vieren'
+            'Instructies geven én uitleggen waarom',
+            'Vragen beantwoorden en ondersteunen',
+            'Motiveren en aanmoedigen',
+            'Feedback geven op prestaties'
           ],
-          sportExample: 'Een trainer die een speler in een dipje niet alleen technische tips geeft, maar ook luistert naar zijn zorgen en hem mentaal ondersteunt.'
+          sportExample: 'Een trainer die een speler door een moeilijke periode helpt door zowel technische begeleiding als mentale ondersteuning te bieden.'
         },
         {
           style: 'S3 - Ondersteunend',
-          behavior: 'Laag Sturend, Hoog Ondersteunend',
+          behavior: 'Laag sturend, hoog ondersteunend',
           when: 'Voor D3 - Voorzichtige Uitvoerder',
-          description: 'De leider faciliteert en ondersteunt, maar laat de medewerker zelf beslissingen nemen.',
+          description: 'De leider faciliteert en ondersteunt, maar laat de uitvoering over aan de medewerker.',
           approach: [
-            'Vragen stellen in plaats van antwoorden geven',
+            'Luisteren en faciliteren',
+            'Betrekken bij besluitvorming',
             'Vertrouwen uitspreken',
-            'Beschikbaar zijn voor ondersteuning',
-            'Samen problemen oplossen'
+            'Beschikbaar zijn voor ondersteuning'
           ],
-          sportExample: 'Een trainer die een ervaren speler vraagt wat hij denkt dat de beste aanpak is en hem ondersteunt in zijn beslissingen.'
+          sportExample: 'Een trainer die een ervaren speler betrekt bij tactische beslissingen en hem het vertrouwen geeft om initiatief te nemen.'
         },
         {
           style: 'S4 - Delegerend',
-          behavior: 'Laag Sturend, Laag Ondersteunend',
+          behavior: 'Laag sturend, laag ondersteunend',
           when: 'Voor D4 - Zelfstandige Uitvoerder',
-          description: 'De leider delegeert verantwoordelijkheid en autoriteit. Minimale sturing en ondersteuning.',
+          description: 'De leider delegeert verantwoordelijkheid en autoriteit.',
           approach: [
-            'Verantwoordelijkheid volledig overdragen',
-            'Beschikbaar zijn wanneer nodig',
-            'Resultaten monitoren, niet het proces',
-            'Ruimte geven voor eigen aanpak'
+            'Verantwoordelijkheid overdragen',
+            'Ruimte geven voor eigen beslissingen',
+            'Beschikbaar zijn indien nodig',
+            'Resultaten monitoren, niet het proces'
           ],
-          sportExample: 'Een trainer die zijn aanvoerder de vrijheid geeft om het team te leiden en alleen ingrijpt als het echt nodig is.'
+          sportExample: 'Een trainer die zijn aanvoerder de vrijheid geeft om het team te leiden en alleen ingrijpt bij belangrijke strategische beslissingen.'
         }
       ],
       keyPrinciples: [
@@ -233,838 +233,1136 @@ const theories: Theory[] = [
         'Kies de bijpassende leiderschapsstijl',
         'Communiceer duidelijk over verwachtingen en aanpak',
         'Monitor de voortgang en pas aan indien nodig',
-        'Werk naar meer zelfstandigheid (D4) toe'
+        'Werk toe naar meer zelfstandigheid (D4 niveau)'
       ],
       commonMistakes: [
-        'Eén stijl gebruiken voor alle mensen en situaties',
+        'Eén stijl gebruiken voor alle situaties en mensen',
         'Aannemen dat ervaren mensen altijd D4 zijn',
-        'Te snel overgaan naar delegeren',
+        'Te snel overgaan naar delegeren zonder de stappen te doorlopen',
         'Niet communiceren over de gekozen aanpak',
-        'Ontwikkelingsniveau niet regelmatig hervalueren'
+        'Ontwikkelingsniveau inschatten op basis van algemene ervaring in plaats van taakspecifieke competentie'
       ],
       benefits: [
         'Betere ontwikkeling van teamleden',
-        'Verhoogde effectiviteit van het team',
-        'Meer gemotiveerde medewerkers',
-        'Duidelijkere communicatie',
-        'Flexibeler leiderschap'
+        'Verhoogde effectiviteit en prestaties',
+        'Meer gemotiveerde en betrokken medewerkers',
+        'Duidelijkere communicatie en verwachtingen',
+        'Flexibeler en aanpassingsvermogen als leider'
       ]
     }
   },
   {
-    id: 'macht-in-leiderschap',
-    title: 'Macht in Leiderschap',
-    description: 'Keltner\'s theorie over hoe macht je brein beschadigt en Marcus & Van Dam\'s zes machtsbronnen voor effectief leiderschap.',
+    id: 'machtsbronnen',
+    title: 'French & Raven: 5 Machtsbronnen',
+    description: 'De vijf verschillende bronnen van macht die leiders kunnen gebruiken om invloed uit te oefenen.',
     content: {
       introduction: {
-        title: 'Macht: Noodzakelijk maar Gevaarlijk',
-        description: 'Macht is essentieel voor management en leiderschap - je kunt niet leiden zonder invloed. Maar macht heeft ook een donkere kant die zorgvuldig beheerd moet worden.',
-        keyInsight: 'Macht hoort bij leiderschap, maar "macht beschadigt je brein" - daarom zijn preventiestrategieën cruciaal.'
+        title: 'Macht in Leiderschap',
+        description: 'French en Raven identificeerden vijf verschillende bronnen van macht die leiders kunnen gebruiken. Elke bron heeft zijn eigen voordelen, nadelen en toepassingen.',
+        keyInsight: 'Effectieve leiders begrijpen welke machtsbron wanneer te gebruiken en combineren verschillende bronnen voor maximale effectiviteit.'
+      },
+      powerSources: [
+        {
+          name: '1. Legitieme Macht (Positiemacht)',
+          description: 'Macht die voortkomt uit je formele positie of titel in de organisatie.',
+          characteristics: [
+            'Gebaseerd op hiërarchie en organisatiestructuur',
+            'Komt met de functie, niet met de persoon',
+            'Wordt erkend door de organisatie',
+            'Heeft duidelijke grenzen en bevoegdheden'
+          ],
+          advantages: [
+            'Duidelijk en officieel erkend',
+            'Geeft autoriteit om beslissingen te nemen',
+            'Ondersteund door organisatiebeleid',
+            'Effectief voor routine taken'
+          ],
+          disadvantages: [
+            'Verdwijnt wanneer je de positie verlaat',
+            'Kan weerstand oproepen',
+            'Beperkt tot formele bevoegdheden',
+            'Werkt niet altijd bij vrijwilligers of experts'
+          ],
+          sportExample: 'Een hoofdtrainer heeft legitieme macht over zijn assistenten en spelers vanwege zijn officiële positie in de club.',
+          effectiveUse: [
+            'Gebruik voor duidelijke organisatorische beslissingen',
+            'Combineer met andere machtsbronnen',
+            'Respecteer de grenzen van je bevoegdheden',
+            'Gebruik spaarzaam om weerstand te voorkomen'
+          ]
+        },
+        {
+          name: '2. Beloningmacht',
+          description: 'Macht gebaseerd op je vermogen om beloningen uit te delen.',
+          characteristics: [
+            'Controle over gewenste middelen of voordelen',
+            'Kan materieel of immaterieel zijn',
+            'Effectiviteit hangt af van waarde voor ontvanger',
+            'Vereist middelen om beloningen te kunnen geven'
+          ],
+          advantages: [
+            'Kan motiverend werken',
+            'Flexibel in toepassing',
+            'Kan gedrag positief beïnvloeden',
+            'Creëert win-win situaties'
+          ],
+          disadvantages: [
+            'Kan afhankelijkheid creëren',
+            'Duur om vol te houden',
+            'Kan externe motivatie bevorderen',
+            'Effectiviteit neemt af bij overgebruik'
+          ],
+          sportExample: 'Een trainer die speeltijd, bonussen, of erkenning kan uitdelen aan spelers die goed presteren.',
+          effectiveUse: [
+            'Zorg dat beloningen waardevol zijn voor ontvanger',
+            'Gebruik eerlijk en consistent',
+            'Combineer met intrinsieke motivatie',
+            'Varieer in type beloningen'
+          ]
+        },
+        {
+          name: '3. Dwangmacht',
+          description: 'Macht gebaseerd op je vermogen om straffen uit te delen.',
+          characteristics: [
+            'Controle over ongewenste consequenties',
+            'Kan fysiek, psychologisch of professioneel zijn',
+            'Werkt door angst voor negatieve gevolgen',
+            'Vereist bereidheid om straffen uit te voeren'
+          ],
+          advantages: [
+            'Kan snel gedrag veranderen',
+            'Effectief bij acute problemen',
+            'Duidelijk in communicatie',
+            'Kan grenzen afdwingen'
+          ],
+          disadvantages: [
+            'Creëert negatieve sfeer',
+            'Kan weerstand en wraak oproepen',
+            'Werkt alleen bij aanwezigheid van leider',
+            'Beschadigt relaties en vertrouwen'
+          ],
+          sportExample: 'Een trainer die spelers kan schorsen, uit het team kan zetten, of extra trainingen kan opleggen als straf.',
+          effectiveUse: [
+            'Gebruik alleen als laatste redmiddel',
+            'Zorg voor eerlijke en consistente toepassing',
+            'Communiceer duidelijk over consequenties',
+            'Focus op gedrag, niet op persoon'
+          ]
+        },
+        {
+          name: '4. Expertmacht',
+          description: 'Macht gebaseerd op je kennis, vaardigheden en expertise.',
+          characteristics: [
+            'Gebaseerd op competentie en kennis',
+            'Erkend door anderen als expert',
+            'Onafhankelijk van formele positie',
+            'Groeit met ervaring en leren'
+          ],
+          advantages: [
+            'Duurzaam en overdraagbaar',
+            'Creëert respect en vertrouwen',
+            'Effectief bij kenniswerkers',
+            'Moeilijk aan te vechten'
+          ],
+          disadvantages: [
+            'Duurt lang om op te bouwen',
+            'Kan verouderen door nieuwe ontwikkelingen',
+            'Beperkt tot expertisegebied',
+            'Kan arrogantie veroorzaken'
+          ],
+          sportExample: 'Een trainer met bewezen tactische kennis en ervaring die spelers respecteren vanwege zijn expertise.',
+          effectiveUse: [
+            'Blijf leren en ontwikkelen',
+            'Deel kennis met anderen',
+            'Erken grenzen van je expertise',
+            'Gebruik om anderen te ontwikkelen'
+          ]
+        },
+        {
+          name: '5. Referentiemacht (Persoonlijke Macht)',
+          description: 'Macht gebaseerd op persoonlijke aantrekkingskracht en charisma.',
+          characteristics: [
+            'Gebaseerd op persoonlijkheid en karakter',
+            'Mensen willen je graag volgen',
+            'Onafhankelijk van positie of middelen',
+            'Gebaseerd op vertrouwen en bewondering'
+          ],
+          advantages: [
+            'Zeer duurzaam en krachtig',
+            'Creëert loyaliteit en betrokkenheid',
+            'Werkt in alle situaties',
+            'Moeilijk te kopiëren'
+          ],
+          disadvantages: [
+            'Moeilijk te ontwikkelen',
+            'Kan misbruikt worden',
+            'Afhankelijk van persoonlijke relaties',
+            'Kan leiden tot afhankelijkheid'
+          ],
+          sportExample: 'Een charismatische aanvoerder die door zijn persoonlijkheid en integriteit natuurlijk leiderschap uitstraalt.',
+          effectiveUse: [
+            'Wees authentiek en integer',
+            'Toon interesse in anderen',
+            'Wees consistent in gedrag',
+            'Gebruik macht ten dienste van anderen'
+          ]
+        }
+      ],
+      powerCombinations: {
+        title: 'Effectieve Machtscombinaties',
+        description: 'De meest effectieve leiders combineren verschillende machtsbronnen afhankelijk van de situatie:',
+        combinations: [
+          {
+            situation: 'Crisis Management',
+            powers: ['Legitieme Macht', 'Expertmacht'],
+            rationale: 'Formele autoriteit gecombineerd met kennis om snel beslissingen te nemen'
+          },
+          {
+            situation: 'Team Development',
+            powers: ['Referentiemacht', 'Beloningmacht'],
+            rationale: 'Persoonlijke invloed gecombineerd met positieve bekrachtiging'
+          },
+          {
+            situation: 'Performance Management',
+            powers: ['Expertmacht', 'Beloningmacht', 'Dwangmacht'],
+            rationale: 'Kennis om te beoordelen, beloningen voor goede prestaties, consequenties voor slechte prestaties'
+          }
+        ]
+      },
+      developingPower: {
+        title: 'Macht Ontwikkelen',
+        description: 'Strategieën om verschillende machtsbronnen te ontwikkelen:',
+        strategies: [
+          {
+            powerType: 'Expertmacht',
+            development: [
+              'Investeer in continue lering en ontwikkeling',
+              'Zoek mentoren en coaches',
+              'Deel je kennis met anderen',
+              'Blijf op de hoogte van ontwikkelingen in je vakgebied'
+            ]
+          },
+          {
+            powerType: 'Referentiemacht',
+            development: [
+              'Ontwikkel emotionele intelligentie',
+              'Wees betrouwbaar en integer',
+              'Toon oprechte interesse in anderen',
+              'Communiceer effectief en inspirerend'
+            ]
+          },
+          {
+            powerType: 'Legitieme Macht',
+            development: [
+              'Presteer goed in je huidige rol',
+              'Ontwikkel leiderschapsvaardigheden',
+              'Bouw een netwerk op',
+              'Zoek uitdagende assignments'
+            ]
+          }
+        ]
+      },
+      ethicalConsiderations: {
+        title: 'Ethische Overwegingen',
+        principles: [
+          'Gebruik macht ten dienste van het team en de organisatie, niet voor persoonlijk gewin',
+          'Wees transparant over je motieven en beslissingen',
+          'Respecteer de waardigheid en rechten van anderen',
+          'Gebruik de minst invasieve vorm van macht die effectief is',
+          'Ontwikkel anderen in plaats van afhankelijkheid te creëren',
+          'Neem verantwoordelijkheid voor de gevolgen van je machtgebruik'
+        ]
+      }
+    }
+  },
+  {
+    id: 'macht-in-leiderschap',
+    title: 'Macht in Leiderschap: Keltner & Marcus/Van Dam',
+    description: 'Hoe macht leiders beïnvloedt en de verschillende bronnen van macht volgens moderne theorieën.',
+    content: {
+      introduction: {
+        title: 'Macht en Leiderschap',
+        description: 'Macht is een fundamenteel aspect van leiderschap, maar het kan ook gevaarlijk zijn. Moderne onderzoek toont aan hoe macht ons gedrag en onze hersenen beïnvloedt.',
+        keyInsight: 'Macht heeft de neiging om empathie te verminderen en kan leiden tot machtsmisbruik, maar er zijn strategieën om dit te voorkomen.'
       },
       keltnerTheory: {
         problem: {
-          description: 'Volgens Keltner gebeurt er iets gevaarlijks in je hoofd als je veel macht hebt. Je ontwikkelt bijna een antisociale persoonlijkheidsstoornis.',
+          description: 'Volgens Dacher Keltner beschadigt macht letterlijk je brein door de empathie-circuits te onderdrukken.',
           effects: [
-            'Je aandacht gaat steeds meer naar jezelf',
-            'Je wordt minder empathisch',
-            'Je morele vermogens nemen af',
-            'Alles wordt gericht op je eigen voordeel',
-            'Je gaat macht misbruiken',
-            'Het gaat niet meer om "the greater good"'
+            'Verminderde empathie en sociale vaardigheden',
+            'Verhoogde impulsiviteit en risicogedrag',
+            'Minder aandacht voor anderen en hun behoeften',
+            'Overschatting van eigen capaciteiten',
+            'Verminderd vermogen om andermans perspectief te begrijpen'
           ]
         },
         preventionStrategies: [
           {
-            name: '1. Empathie',
-            description: 'Richt jezelf voortdurend op de belangen en gevoelens van anderen, niet alleen op jezelf.',
-            practice: 'Wees empathisch en denk actief na over hoe anderen zich voelen en wat zij nodig hebben.'
+            name: '1. Perspectief Nemen',
+            description: 'Bewust proberen de wereld te zien vanuit het perspectief van anderen',
+            practice: 'Vraag regelmatig: "Hoe zou dit voelen voor mijn teamleden?" en luister actief naar hun ervaringen'
           },
           {
-            name: '2. Delen/Generositeit',
-            description: 'Deel wat je krijgt door je macht - kennis, geld, respect - ruimhartig met anderen.',
-            practice: 'Geef credit aan je team, deel informatie en middelen, en zorg dat anderen ook kunnen groeien.'
+            name: '2. Nederigheid Cultiveren',
+            description: 'Erkennen van je eigen beperkingen en fouten',
+            practice: 'Geef fouten toe, vraag om feedback, en erken de bijdragen van anderen aan je succes'
           },
           {
-            name: '3. Dankbaarheid',
-            description: 'Wees dankbaar voor de macht en voorrechten die je hebt gekregen en deel die dankbaarheid.',
-            practice: 'Erken dat je macht een geschenk is van anderen en toon waardering voor wat je hebt ontvangen.'
+            name: '3. Empathie Oefenen',
+            description: 'Actief werken aan het begrijpen en voelen van andermans emoties',
+            practice: 'Besteed tijd aan persoonlijke gesprekken met teamleden en toon oprechte interesse in hun welzijn'
           },
           {
-            name: '4. Verbinding',
-            description: 'Zorg dat je werkt aan gezamenlijke doelen en hou verbinding met je team.',
-            practice: 'Vertel verhalen die mensen verbinden, focus op gemeenschappelijke doelen en blijf betrokken bij je team.'
+            name: '4. Macht Delen',
+            description: 'Bewust macht en verantwoordelijkheid delegeren aan anderen',
+            practice: 'Geef anderen beslissingsbevoegdheid, creëer ontwikkelingsmogelijkheden, en vermijd micromanagement'
           }
         ]
       },
       marcusVanDam: {
         positionBased: [
           {
-            name: 'Legitieme Macht',
-            description: 'Macht die je hebt gekregen van anderen door je positie of functie.',
+            name: 'Positiemacht',
+            description: 'Macht die voortkomt uit je formele positie in de hiërarchie',
             advantages: [
-              'Duidelijk en geaccepteerd',
-              'Officieel erkend',
-              'Geeft autoriteit om beslissingen te nemen'
+              'Officieel erkend en geaccepteerd',
+              'Duidelijke autoriteit en bevoegdheden',
+              'Ondersteund door organisatiestructuur'
             ],
             disadvantages: [
-              'Verdwijnt als je de positie verlaat',
+              'Verdwijnt met de positie',
               'Kan weerstand oproepen',
-              'Werkt alleen binnen de organisatie'
+              'Beperkt tot formele bevoegdheden'
             ],
-            sportExample: 'Een hoofdtrainer heeft legitieme macht over zijn assistenten en spelers door zijn aanstelling door de club.'
+            sportExample: 'Een hoofdtrainer heeft positiemacht over zijn staf en spelers vanwege zijn officiële rol'
           },
           {
             name: 'Beloningmacht',
-            description: 'Macht om anderen op welke manier dan ook te belonen.',
+            description: 'Macht gebaseerd op het kunnen uitdelen van beloningen',
             advantages: [
               'Kan motiverend werken',
-              'Duidelijke incentive',
-              'Meetbare resultaten'
+              'Flexibel in toepassing',
+              'Creëert positieve associaties'
             ],
             disadvantages: [
               'Kan afhankelijkheid creëren',
-              'Externe motivatie in plaats van intrinsieke',
-              'Duur om vol te houden'
+              'Duur om vol te houden',
+              'Effectiviteit neemt af bij overgebruik'
             ],
-            sportExample: 'Een trainer die speeltijd, bonussen of complimenten kan geven aan goed presterende spelers.'
+            sportExample: 'Een trainer die speeltijd, bonussen of erkenning kan uitdelen aan presterende spelers'
           },
           {
-            name: 'Sanctiemacht',
-            description: 'Macht om mensen te straffen of uit te sluiten als ze niet meewerken.',
+            name: 'Dwangmacht',
+            description: 'Macht gebaseerd op het kunnen uitdelen van straffen',
             advantages: [
               'Kan snel gedrag veranderen',
-              'Duidelijke consequenties',
-              'Handhaaft discipline'
+              'Effectief bij acute problemen',
+              'Duidelijk in communicatie'
             ],
             disadvantages: [
-              'Creëert angst en weerstand',
-              'Beschadigt relaties',
-              'Werkt alleen op korte termijn'
+              'Creëert negatieve sfeer',
+              'Kan weerstand oproepen',
+              'Beschadigt relaties'
             ],
-            sportExample: 'Een trainer die spelers kan schorsen, op de bank kan zetten of uit de selectie kan halen.'
-          },
-          {
-            name: 'Informatiemacht',
-            description: 'Macht door de informatie die je hebt - sommige mensen kunnen zonder die informatie niets doen.',
-            advantages: [
-              'Kan snel impact hebben',
-              'Maakt je onmisbaar',
-              'Geeft controle over processen'
-            ],
-            disadvantages: [
-              'Kan leiden tot informatiehoarding',
-              'Creëert afhankelijkheid',
-              'Verdwijnt als informatie gedeeld wordt'
-            ],
-            sportExample: 'Een trainer die exclusieve informatie heeft over tegenstanders, blessures of tactische plannen.'
+            sportExample: 'Een trainer die spelers kan schorsen of uit het team kan zetten als straf'
           }
         ],
         personBased: [
           {
-            name: 'Expertisemacht',
-            description: 'Macht door kennis en vaardigheden - "kennis is macht".',
+            name: 'Persoonlijke Macht',
+            description: 'Macht gebaseerd op persoonlijke kwaliteiten en charisma',
             advantages: [
-              'Duurzaam en overdraagbaar',
-              'Gebaseerd op competentie',
-              'Creëert respect'
-            ],
-            disadvantages: [
-              'Duurt lang om op te bouwen',
-              'Kan verouderen',
-              'Vereist constante ontwikkeling'
-            ],
-            sportExample: 'Een trainer die respect heeft door zijn uitgebreide kennis van tactiek, training en spelersmanagement.'
-          },
-          {
-            name: 'Referentiemacht (Charisma)',
-            description: 'Macht door persoonlijke aantrekkingskracht en charisma - mensen volgen je omdat ze je bewonderen.',
-            advantages: [
-              'Zeer motiverend voor anderen',
-              'Creëert loyaliteit',
-              'Werkt in alle situaties'
+              'Zeer duurzaam en krachtig',
+              'Onafhankelijk van positie',
+              'Creëert loyaliteit en vertrouwen'
             ],
             disadvantages: [
               'Moeilijk te ontwikkelen',
-              'Kan leiden tot blinde volgzaamheid',
-              'Afhankelijk van persoonlijkheid'
+              'Afhankelijk van persoonlijke relaties',
+              'Kan leiden tot afhankelijkheid'
             ],
-            sportExample: 'Een charismatische trainer zoals Jürgen Klopp die spelers inspireert door zijn persoonlijkheid en passie.'
+            sportExample: 'Een charismatische aanvoerder die door zijn persoonlijkheid natuurlijk leiderschap uitstraalt'
+          },
+          {
+            name: 'Informatiemacht',
+            description: 'Macht gebaseerd op toegang tot belangrijke informatie',
+            advantages: [
+              'Kan snel impact hebben',
+              'Waardevol in kennisorganisaties',
+              'Flexibel in toepassing'
+            ],
+            disadvantages: [
+              'Kan verouderen',
+              'Afhankelijk van informatietoegang',
+              'Kan misbruikt worden'
+            ],
+            sportExample: 'Een analist die cruciale informatie heeft over tegenstanders en tactische zwaktes'
+          },
+          {
+            name: 'Verbindingsmacht',
+            description: 'Macht gebaseerd op je netwerk en connecties',
+            advantages: [
+              'Kan deuren openen',
+              'Vergroot invloedssfeer',
+              'Waardevol voor organisatie'
+            ],
+            disadvantages: [
+              'Afhankelijk van relaties',
+              'Kan verdwijnen bij conflicten',
+              'Vereist onderhoud'
+            ],
+            sportExample: 'Een trainer met uitstekende contacten bij andere clubs, media en voetbalbond'
           }
         ]
       },
       integration: {
-        title: 'Integratie: Keltner + Marcus & Van Dam',
-        description: 'De combinatie van beide theorieën geeft een compleet beeld van macht in leiderschap.',
+        title: 'Integratie van Theorieën',
+        description: 'Keltner\'s waarschuwingen over macht combineren met Marcus & Van Dam\'s praktische benadering:',
         keyPoints: [
-          'Positie-gebonden macht heeft het hoogste risico voor Keltner\'s "macht beschadigt je brein" effecten',
-          'Persoon-gebonden macht is duurzamer en minder risicovol voor machtsmisbruik',
-          'Effectieve leiders combineren verschillende machtsbronnen afhankelijk van de situatie',
-          'Keltner\'s vier preventiestrategieën zijn vooral belangrijk bij positie-gebonden macht'
+          'Persoonlijke Macht is het minst risicovol voor Keltner\'s "macht beschadigt je brein" effecten',
+          'Positie-gebonden macht (Positiemacht, Dwangmacht) heeft het hoogste risico voor machtsmisbruik',
+          'Informatiemacht en Verbindingsmacht vereisen continue ethische overwegingen',
+          'Effectieve leiders combineren verschillende machtsbronnen maar blijven alert op de gevaren',
+          'Keltner\'s preventiestrategieën zijn essentieel bij het gebruik van alle machtsbronnen'
         ]
       },
       practicalApplications: [
         {
-          situation: 'Nieuwe teamleider',
-          approach: 'Begin met legitieme macht, bouw snel expertise en referentiemacht op',
-          powerSources: ['Legitieme Macht', 'Expertisemacht', 'Informatiemacht']
-        },
-        {
-          situation: 'Ervaren leider',
-          approach: 'Focus op persoon-gebonden macht en pas Keltner\'s preventiestrategieën toe',
-          powerSources: ['Expertisemacht', 'Referentiemacht', 'Empathie', 'Delen']
+          situation: 'Nieuwe leider in organisatie',
+          approach: 'Begin met Persoonlijke Macht opbouwen, gebruik Positiemacht spaarzaam',
+          powerSources: ['Persoonlijke Macht', 'Informatiemacht']
         },
         {
           situation: 'Crisis management',
-          approach: 'Gebruik legitieme en sanctiemacht, maar herstel daarna relaties',
-          powerSources: ['Legitieme Macht', 'Sanctiemacht', 'Informatiemacht']
+          approach: 'Combineer Positiemacht met Expertmacht, maar behoud empathie',
+          powerSources: ['Positiemacht', 'Informatiemacht', 'Persoonlijke Macht']
         },
         {
-          situation: 'Team ontwikkeling',
-          approach: 'Gebruik beloningmacht en expertise, deel kennis en verantwoordelijkheid',
-          powerSources: ['Beloningmacht', 'Expertisemacht', 'Delen', 'Verbinding']
+          situation: 'Team development',
+          approach: 'Focus op Persoonlijke Macht en deel macht met teamleden',
+          powerSources: ['Persoonlijke Macht', 'Beloningmacht']
+        },
+        {
+          situation: 'Veranderingsproces',
+          approach: 'Gebruik Verbindingsmacht en Informatiemacht, vermijd Dwangmacht',
+          powerSources: ['Verbindingsmacht', 'Informatiemacht', 'Persoonlijke Macht']
         }
       ],
       warningSignals: [
-        'Je luistert alleen nog naar mensen die het met je eens zijn',
-        'Je neemt alle credit voor successen',
-        'Je toont geen interesse in de mening van anderen',
-        'Je gebruikt macht vooral voor persoonlijk gewin',
-        'Je vermijdt feedback of kritiek',
-        'Je isolatie van het team neemt toe'
+        'Je luistert minder naar feedback van anderen',
+        'Je neemt meer risico\'s zonder anderen te raadplegen',
+        'Je voelt je superieur aan je teamleden',
+        'Je hebt minder geduld met andermans meningen',
+        'Je delegeert minder en wilt meer controleren',
+        'Je omringt jezelf alleen met mensen die het met je eens zijn',
+        'Je neemt beslissingen zonder input van anderen',
+        'Je voelt je minder verbonden met je team'
       ],
       ethicalGuidelines: [
         'Gebruik macht ten dienste van het team en de organisatie',
-        'Wees transparant over je beslissingen en motieven',
-        'Zoek regelmatig feedback van je team',
-        'Deel informatie en mogelijkheden met anderen',
-        'Erken de bijdragen van teamleden',
-        'Blijf leren en jezelf ontwikkelen'
+        'Blijf regelmatig feedback vragen en luisteren naar anderen',
+        'Deel macht en verantwoordelijkheid met teamleden',
+        'Erken je fouten en beperkingen openlijk',
+        'Investeer in persoonlijke ontwikkeling en zelfbewustzijn',
+        'Creëer systemen van checks and balances',
+        'Focus op het ontwikkelen van anderen in plaats van controle',
+        'Gebruik de minst invasieve vorm van macht die effectief is'
       ]
     }
   },
   {
     id: 'narcisme',
-    title: 'Disfunctioneel Leiderschap (Kets de Vries)',
-    description: 'Manfred Kets de Vries\' analyse van disfunctionele leiderschapspatronen en hoe deze te herkennen en voorkomen.',
+    title: 'Kets de Vries: Disfunctionele Leiderschapspatronen',
+    description: 'Manfred Kets de Vries\' analyse van wanneer leiders ontsporen en disfunctionele patronen ontwikkelen.',
     content: {
       introduction: {
-        title: 'Wanneer Leiderschap Misgaat',
-        description: 'Kets de Vries identificeert verschillende disfunctionele leiderschapspatronen die organisaties kunnen beschadigen. Deze patronen ontstaan vaak uit onverwerkte psychologische problemen van de leider.',
-        keyInsight: 'Disfunctioneel leiderschap is vaak het gevolg van onbewuste psychologische patronen die de leider zelf niet herkent.'
+        title: 'Wanneer Leiders Ontsporen',
+        description: 'Manfred Kets de Vries, een van de meest geciteerde wetenschappers op het gebied van leiderschap, onderzoekt wat er gebeurt wanneer leiders disfunctionele patronen ontwikkelen. Zijn beroemde uitspraak: "Everybody is normal until you know them better" - pas wanneer je iemand echt leert kennen, zie je dat niet iedereen normaal is, zeker bij leiders.',
+        keyInsight: 'Macht en positie kunnen leiden tot disfunctionele patronen die effectief leiderschap ondermijnen. Herkenning en preventie zijn cruciaal.'
       },
       dysfunctionalPatterns: [
         {
           name: 'De Narcistische Leider',
-          description: 'Heeft een overdreven gevoel van eigenwaarde en superioriteit, zoekt constant bewondering.',
+          description: 'Leiders met een overdreven gevoel van eigenwaarde en superioriteit die constant bevestiging zoeken.',
           characteristics: [
-            'Overdreven gevoel van eigenwaarde',
+            'Overdreven gevoel van eigenwaarde en superioriteit',
+            'Constant op zoek naar bewondering en bevestiging',
+            'Gebrek aan empathie voor anderen',
+            'Geloof dat ze uniek en speciaal zijn',
             'Fantasieën over onbeperkt succes en macht',
-            'Gelooft uniek en speciaal te zijn',
-            'Heeft behoefte aan constante bewondering',
-            'Gevoel van recht op speciale behandeling',
-            'Exploiteert anderen voor eigen doelen'
+            'Uitbuiting van anderen voor eigen doelen',
+            'Arrogant gedrag en houding'
           ],
           consequences: [
-            'Demotiveert teamleden',
-            'Creëert toxische werkcultuur',
-            'Leidt tot hoog verloop',
-            'Vermindert innovatie',
-            'Beschadigt organisatiereputatie'
+            'Slechte besluitvorming door gebrek aan input',
+            'Hoog verloop van getalenteerde medewerkers',
+            'Toxische organisatiecultuur',
+            'Verminderde innovatie en creativiteit',
+            'Ethische problemen en schandalen'
           ],
+          sportExample: 'Een trainer die alle eer opeist voor overwinningen, spelers de schuld geeft van nederlagen, en weigert te luisteren naar feedback van zijn staf.',
           recognition: [
-            'Neemt alle credit voor successen',
-            'Geeft anderen de schuld van mislukkingen',
-            'Toont weinig empathie',
+            'Neemt alle eer voor successen',
+            'Geeft anderen de schuld bij mislukkingen',
+            'Omringt zich met ja-knikkers',
             'Reageert slecht op kritiek',
-            'Omringt zich met ja-knikkers'
-          ],
-          sportExample: 'Een trainer die alle media-aandacht naar zich toetrekt, spelers publiekelijk vernedert en weigert verantwoordelijkheid te nemen voor slechte resultaten.'
+            'Toont weinig interesse in ontwikkeling van anderen'
+          ]
         },
         {
           name: 'De Paranoïde Leider',
-          description: 'Vertoont excessief wantrouwen jegens anderen en ziet overal complotten en bedreigingen.',
+          description: 'Leiders die excessief wantrouwend zijn en overal bedreigingen en complotten zien.',
           characteristics: [
-            'Excessief wantrouwen',
-            'Ziet overal bedreigingen',
-            'Interpreteert neutrale opmerkingen als aanvallen',
-            'Houdt wrok vast',
-            'Deelt geen informatie',
-            'Controleert obsessief'
+            'Excessief wantrouwen jegens anderen',
+            'Ziet overal complotten en bedreigingen',
+            'Obsessieve controle en micromanagement',
+            'Moeilijkheden met delegeren',
+            'Interpreteert neutrale acties als vijandig',
+            'Houdt rancune en vergeeft niet gemakkelijk',
+            'Isoleert zich van potentiële "bedreigingen"'
           ],
           consequences: [
-            'Inefficiënte processen door micromanagement',
-            'Angstcultuur in het team',
-            'Verminderde creativiteit',
-            'Slechte communicatie',
-            'Hoge stress bij medewerkers'
+            'Inefficiënte processen door overcontrole',
+            'Angstcultuur in de organisatie',
+            'Verminderde creativiteit en initiatief',
+            'Hoge stress en burn-out bij medewerkers',
+            'Slechte samenwerking en teamwork'
           ],
+          sportExample: 'Een trainer die denkt dat spelers tegen hem samenzweren, alle communicatie controleert, en niemand vertrouwt met belangrijke informatie.',
           recognition: [
-            'Constant achterdochtig gedrag',
-            'Weigert te delegeren',
-            'Zoekt naar verborgen agenda\'s',
-            'Isoleert zich van het team',
-            'Reageert defensief op vragen'
-          ],
-          sportExample: 'Een trainer die denkt dat spelers tegen hem samenzweren, alle gesprekken afluistert en niemand vertrouwt met belangrijke informatie.'
+            'Controleert alle communicatie',
+            'Vertrouwt niemand volledig',
+            'Ziet verraad waar het niet is',
+            'Houdt informatie voor zich',
+            'Reageert overdreven op kleine incidenten'
+          ]
         },
         {
           name: 'De Theatrale Leider',
-          description: 'Heeft een constante behoefte aan aandacht en dramatiseert situaties.',
+          description: 'Leiders die constant aandacht zoeken en dramatisch gedrag vertonen.',
           characteristics: [
-            'Constante behoefte aan aandacht',
+            'Constant behoefte aan aandacht en bewondering',
             'Dramatisch en emotioneel gedrag',
-            'Oppervlakkige emoties',
-            'Zoekt constant goedkeuring',
-            'Impulsieve beslissingen',
-            'Overdreven expressief'
+            'Oppervlakkige en snel veranderende emoties',
+            'Ziet zichzelf als centrum van aandacht',
+            'Overdreven expressief en theatraal',
+            'Gemakkelijk beïnvloedbaar door anderen',
+            'Relaties worden als intiemer ervaren dan ze zijn'
           ],
           consequences: [
-            'Instabiele werkomgeving',
-            'Onvoorspelbare besluitvorming',
-            'Verminderde geloofwaardigheid',
-            'Chaos in planning',
-            'Stress bij teamleden'
+            'Instabiele en onvoorspelbare werkomgeving',
+            'Gebrek aan focus op lange termijn doelen',
+            'Verwarring over prioriteiten',
+            'Emotionele uitputting van medewerkers',
+            'Inconsistent beleid en besluitvorming'
           ],
+          sportExample: 'Een trainer die elke persconferentie gebruikt als show, overdreven reageert op gebeurtenissen, en meer bezig is met zijn imago dan met het team.',
           recognition: [
+            'Zoekt constant media-aandacht',
             'Overdreven emotionele reacties',
-            'Constant in het middelpunt willen staan',
-            'Impulsieve veranderingen',
-            'Dramatiseert kleine problemen',
-            'Inconsistent gedrag'
-          ],
-          sportExample: 'Een trainer die bij elke persconferentie dramatische uitspraken doet, spelers publiekelijk omhelst of uitscheldt, en constant de aandacht op zich vestigt.'
+            'Inconsistent in boodschappen',
+            'Focus op eigen imago',
+            'Dramatiseert situaties'
+          ]
         },
         {
           name: 'De Dwangmatige Leider',
-          description: 'Heeft een obsessie met perfectie, details en controle.',
+          description: 'Leiders die geobsedeerd zijn door perfectie, details en controle.',
           characteristics: [
-            'Obsessie met perfectie',
-            'Overdreven aandacht voor details',
-            'Rigide werkwijze',
-            'Moeilijk delegeren',
-            'Hoge standaarden voor anderen',
-            'Angst voor fouten'
+            'Obsessie met perfectie en details',
+            'Rigide en inflexibele werkwijze',
+            'Moeilijkheden met delegeren',
+            'Overmatige focus op regels en procedures',
+            'Perfectionisme dat productiviteit belemmert',
+            'Moeilijkheden met het nemen van beslissingen',
+            'Workaholic gedrag'
           ],
           consequences: [
             'Vertraagde besluitvorming',
-            'Verminderde flexibiliteit',
-            'Stress door onrealistische eisen',
-            'Gebrek aan innovatie',
-            'Burnout bij teamleden'
+            'Verminderde efficiëntie door overanalyse',
+            'Frustratie bij medewerkers',
+            'Gebrek aan innovatie en flexibiliteit',
+            'Burn-out bij leider en team'
           ],
+          sportExample: 'Een trainer die elke training tot in detail plant, niet kan delegeren aan assistenten, en spelers frustreert met eindeloze herhalingen van perfecte uitvoering.',
           recognition: [
-            'Eindeloos herzien van plannen',
-            'Micromanagement',
-            'Kan niet loslaten',
-            'Kritisch op kleine details',
-            'Vermijdt risico\'s'
-          ],
-          sportExample: 'Een trainer die elke training tot in de seconde plant, spelers corrigeert op kleinste details en weigert van zijn systeem af te wijken, zelfs als het niet werkt.'
+            'Micromanagement van alle aspecten',
+            'Kan geen fouten tolereren',
+            'Eindeloze herzieningen van plannen',
+            'Moeilijkheden met prioriteiten stellen',
+            'Werkt excessief lange uren'
+          ]
         },
         {
           name: 'De Depressieve Leider',
-          description: 'Toont chronisch pessimisme en gebrek aan energie.',
+          description: 'Leiders die chronisch pessimistisch zijn en gebrek aan energie tonen.',
           characteristics: [
-            'Chronisch pessimisme',
-            'Gebrek aan energie',
-            'Negatieve wereldvisie',
-            'Vermijdt beslissingen',
-            'Lage zelfwaardering',
-            'Sociale isolatie'
+            'Chronisch pessimisme en negativiteit',
+            'Gebrek aan energie en enthousiasme',
+            'Moeilijkheden met motiveren van anderen',
+            'Neiging tot zelfkritiek en twijfel',
+            'Vermijding van risico\'s en uitdagingen',
+            'Sociale isolatie en terugtrekking',
+            'Gebrek aan visie en richting'
           ],
           consequences: [
-            'Demotiveert het hele team',
-            'Verminderde productiviteit',
-            'Negatieve sfeer',
-            'Gebrek aan visie',
-            'Stagnatie in ontwikkeling'
+            'Demotivatie van het hele team',
+            'Gebrek aan innovatie en groei',
+            'Negatieve organisatiecultuur',
+            'Verminderde prestaties',
+            'Hoog verloop van ambitieuze medewerkers'
           ],
+          sportExample: 'Een trainer die altijd het ergste verwacht, geen vertrouwen uitstraalt in zijn team, en spelers demotiveert met zijn pessimistische houding.',
           recognition: [
-            'Constant negatieve houding',
-            'Vermijdt uitdagingen',
-            'Weinig enthousiasme',
-            'Twijfelt aan alles',
-            'Trekt zich terug'
-          ],
-          sportExample: 'Een trainer die constant spreekt over wat er mis kan gaan, geen vertrouwen uitstraalt en het team demotiveert met zijn pessimistische houding.'
+            'Constant negatieve verwachtingen',
+            'Gebrek aan enthousiasme',
+            'Vermijdt uitdagende doelen',
+            'Weinig sociale interactie',
+            'Focus op problemen in plaats van oplossingen'
+          ]
         }
       ],
+      narcissisticCharacteristics: {
+        title: 'Uitgebreide Kenmerken van Narcisme',
+        description: 'Gedetailleerde kenmerken van narcistische leiders volgens Kets de Vries:',
+        traits: [
+          'Slechte verliezers én slechte winnaars - ligt altijd aan anderen of het is nooit goed genoeg',
+          'Voelen zich voortdurend ondergewaardeerd en zoeken constant waardering',
+          'Denken dat iedereen dom is en zij de slimste zijn',
+          'Superieur gevoel - hun kijk op dingen is absoluut beter',
+          'Vinden het heerlijk om anderen te vertellen wat ze moeten doen (dominant)',
+          'Zijn entertainers - hoog entertainment gehalte in speeches en presentaties',
+          'Hebben geen emoties en willen ze ook niet voelen - emotieloos',
+          'Luisteren niet - willen heel graag aan het woord zijn',
+          'Zijn ontzettend romantisch maar bedriegers in relaties',
+          'Hebben allemaal scheidingen achter de rug',
+          'Always to be in control - micromanagement is heel belangrijk',
+          'Spelen spelletjes om macht te behouden - spelen mensen tegen elkaar uit',
+          'Hebben een groot ego en vaak een gebouw met hun naam erop',
+          'Hebben vaak een veel jongere partner (geboren nadat de leider al volwassen was)'
+        ]
+      },
+      powerAndCorruption: {
+        title: 'Macht en Corruptie',
+        description: 'Kets de Vries over de relatie tussen macht en narcisme:',
+        insights: [
+          'Als je extreme macht hebt, ben je corrupt - absoluut',
+          'Van hero tot zero - mensen die alle macht krijgen worden corrupt',
+          'Met sterke macht ben je omringd door leugenaars en ja-knikkers',
+          'Alle machtige leiders hebben een heel groot ego',
+          'Lonely at the top - macht maakt eenzaam',
+          'Je hebt geen vrijheid - moet voortdurend controleren en op je hoede zijn',
+          'Moet voortdurend spelletjes spelen om macht te behouden'
+        ]
+      },
       preventionStrategies: {
-        title: 'Preventiestrategieën',
-        description: 'Hoe kun je disfunctioneel leiderschapsgedrag voorkomen?',
+        title: 'Preventie en Interventie',
+        description: 'Kets de Vries\' methoden om disfunctioneel leiderschap te voorkomen en aan te pakken:',
         strategies: [
           {
-            strategy: 'Zelfbewustzijn ontwikkelen',
-            description: 'Regelmatige zelfreflectie en bewustwording van eigen gedragspatronen.',
+            strategy: 'Zelfbewustzijn Ontwikkelen',
+            description: 'Bewust worden van eigen patronen en gedragingen',
             implementation: [
-              'Regelmatige zelfevaluatie',
-              'Persoonlijke coaching',
-              'Mindfulness praktijk',
-              'Journaling'
+              '360-graden feedback regelmatig inzetten',
+              'Persoonlijke coaching en therapie',
+              'Reflectie op eigen gedrag en impact',
+              'Feedback van familie en vrienden serieus nemen'
             ]
           },
           {
-            strategy: 'Feedback zoeken',
-            description: 'Actief feedback vragen van teamleden, collega\'s en superieuren.',
+            strategy: 'Creatief Worden',
+            description: 'Weer gaan dromen en creatief denken over de toekomst',
             implementation: [
-              '360-graden feedback',
-              'Regelmatige teamgesprekken',
-              'Mentorship',
-              'Open communicatie stimuleren'
+              'Tijd maken voor reflectie en visie ontwikkeling',
+              'Nieuwe uitdagingen zoeken buiten comfort zone',
+              'Inspiratie zoeken in andere sectoren',
+              'Experimenteren met nieuwe ideeën'
             ]
           },
           {
-            strategy: 'Professionele ontwikkeling',
-            description: 'Investeren in persoonlijke en professionele groei.',
+            strategy: 'Legacy Vragen',
+            description: 'Nadenken over hoe je herinnerd wilt worden',
             implementation: [
-              'Leiderschapstraining',
-              'Therapie indien nodig',
-              'Coaching',
-              'Peer learning'
+              'Regelmatig vragen: "Wat is mijn legacy?"',
+              'Focus op lange termijn impact',
+              'Investeren in ontwikkeling van anderen',
+              'Ethische overwegingen centraal stellen'
             ]
           },
           {
-            strategy: 'Systemen en checks',
-            description: 'Organisatorische safeguards implementeren.',
+            strategy: 'Relaties Opbouwen',
+            description: 'Omgaan met eenzaamheid en echte verbindingen maken',
             implementation: [
-              'Checks and balances',
-              'Diverse teams',
-              'Transparante processen',
-              'Regelmatige evaluaties'
+              'Investeren in persoonlijke relaties',
+              'Mentoren zoeken en zijn',
+              'Tijd besteden aan familie en vrienden',
+              'Authentieke gesprekken voeren'
+            ]
+          },
+          {
+            strategy: 'Controle Loslaten',
+            description: 'Omgaan met angst en behoefte aan controle',
+            implementation: [
+              'Delegeren en vertrouwen geven',
+              'Accepteren van onzekerheid',
+              'Focus op wat je wel kunt beïnvloeden',
+              'Mindfulness en stress management'
             ]
           }
         ]
       },
       warningSignals: [
         'Hoog verloop van getalenteerde medewerkers',
-        'Verminderde teammoraal',
-        'Gebrek aan open communicatie',
-        'Angst om feedback te geven',
-        'Stagnatie in innovatie',
-        'Toxische werkcultuur',
-        'Verminderde prestaties',
-        'Isolatie van de leider'
+        'Gebrek aan opvolgers of potentiële leiders',
+        'Verminderde innovatie en creativiteit',
+        'Ethische problemen en schandalen',
+        'Slechte externe reputatie',
+        'Angstcultuur in de organisatie',
+        'Gebrek aan diverse meningen in besluitvorming',
+        'Persoonlijke relaties die lijden onder werk',
+        'Fysieke en mentale gezondheidsproblemen',
+        'Isolatie van feedback en kritiek'
       ],
       healthyLeadership: {
         title: 'Kenmerken van Gezond Leiderschap',
-        description: 'Wat kenmerkt effectieve, gezonde leiders?',
+        description: 'Wat gezonde leiders onderscheidt van disfunctionele leiders:',
         characteristics: [
           'Zelfbewustzijn en emotionele intelligentie',
           'Empathie en interesse in anderen',
+          'Bereidheid om fouten toe te geven en te leren',
+          'Delegeren en anderen ontwikkelen',
+          'Ethisch gedrag en integriteit',
+          'Balans tussen werk en privé',
           'Openheid voor feedback en kritiek',
-          'Flexibiliteit en aanpassingsvermogen',
-          'Integriteit en authentiek gedrag',
-          'Focus op teamontwikkeling',
-          'Balans tussen zelfvertrouwen en nederigheid',
-          'Duidelijke communicatie'
+          'Focus op lange termijn succes van organisatie',
+          'Authentiek en consistent gedrag',
+          'Investeren in relaties en vertrouwen'
+        ]
+      },
+      organizationalSafeguards: {
+        title: 'Organisatorische Waarborgen',
+        description: 'Systemen om disfunctioneel leiderschap te voorkomen:',
+        safeguards: [
+          'Implementeer checks and balances in governance',
+          'Creëer diverse en onafhankelijke adviesraden',
+          'Stel duidelijke ethische richtlijnen en gedragscodes op',
+          'Ontwikkel robuuste feedback systemen',
+          'Investeer in leiderschapsontwikkeling programma\'s',
+          'Creëer psychologische veiligheid voor het uiten van zorgen',
+          'Implementeer regelmatige leiderschap assessments',
+          'Zorg voor externe toezicht en accountability'
         ]
       }
     }
   },
   {
     id: 'maccoby',
-    title: 'Productief vs Destructief Narcisme (Maccoby)',
+    title: 'Maccoby: Productief vs Destructief Narcisme',
     description: 'Michael Maccoby\'s onderscheid tussen productieve en destructieve vormen van narcisme in leiderschap.',
     content: {
       introduction: {
-        title: 'Narcisme: Niet Altijd Slecht',
-        description: 'Michael Maccoby stelt dat narcisme in leiderschap niet per definitie destructief is. Er bestaat een belangrijk onderscheid tussen productief en destructief narcisme.',
-        keyInsight: 'Productieve narcisten kunnen uitstekende leiders zijn als ze hun narcistische trekken kanaliseren naar teamdoelen in plaats van persoonlijk gewin.'
+        title: 'Narcisme: Niet Altijd Destructief',
+        description: 'Michael Maccoby toont aan dat narcisme niet altijd negatief is. Er bestaat een belangrijk onderscheid tussen productief en destructief narcisme in leiderschap.',
+        keyInsight: 'Productieve narcisten kunnen uitstekende leiders zijn als ze hun narcistische trekken kanaliseren naar teamdoelen en empathie ontwikkelen.'
       },
       narcissismTypes: [
         {
           type: 'Productief Narcisme',
-          description: 'Narcistische trekken die worden ingezet voor het grotere goed van het team of de organisatie.',
+          description: 'Narcistische trekken die positief bijdragen aan leiderschap en organisatiesucces.',
           characteristics: [
-            'Hoog zelfvertrouwen en ambitie',
-            'Visionair denken',
+            'Visionair denken en grote ambities',
+            'Zelfvertrouwen en charisma',
             'Bereidheid om risico\'s te nemen',
-            'Charismatische uitstraling',
-            'Competitieve drive',
-            'Inspirerend voor anderen'
+            'Competitieve drive en wil om te winnen',
+            'Vermogen om anderen te inspireren',
+            'Focus op innovatie en verandering',
+            'Sterke overtuigingskracht'
           ],
           benefits: [
-            'Motiveert teams tot hoge prestaties',
-            'Creëert ambitieuze doelen',
-            'Durft moeilijke beslissingen te nemen',
-            'Inspireert vertrouwen',
-            'Drijft innovatie vooruit',
-            'Bouwt sterke organisatiecultuur'
+            'Kunnen organisaties transformeren',
+            'Inspireren anderen tot topprestaties',
+            'Durven moeilijke beslissingen te nemen',
+            'Creëren visie en richting',
+            'Brengen energie en enthousiasme',
+            'Zijn niet bang voor uitdagingen',
+            'Kunnen teams motiveren tot excellentie'
           ],
-          sportExample: 'Een trainer zoals Pep Guardiola die zijn perfectionalisme en hoge eisen gebruikt om teams naar het hoogste niveau te tillen, waarbij zijn ego dienstbaar is aan teamsucces.'
+          sportExample: 'Een trainer die een duidelijke visie heeft, het team inspireert tot grootse doelen, en de moed heeft om moeilijke tactische beslissingen te nemen die uiteindelijk tot succes leiden.'
         },
         {
           type: 'Destructief Narcisme',
-          description: 'Narcistische trekken die primair gericht zijn op persoonlijk gewin ten koste van anderen.',
+          description: 'Narcistische trekken die leiden tot disfunctioneel leiderschap en organisatieschade.',
           characteristics: [
-            'Gebrek aan empathie',
-            'Exploiteert anderen',
-            'Neemt alle credit',
-            'Geeft anderen de schuld',
-            'Luistert niet naar feedback',
-            'Ziet anderen als bedreigingen'
+            'Gebrek aan empathie voor anderen',
+            'Alleen luisteren naar mensen die het eens zijn',
+            'Overschatting van eigen capaciteiten',
+            'Uitbuiting van anderen voor eigen doelen',
+            'Onvermogen om kritiek te accepteren',
+            'Obsessie met eigen imago en status',
+            'Gebrek aan interesse in ontwikkeling van anderen'
           ],
           consequences: [
-            'Demotiveert teamleden',
-            'Creëert toxische cultuur',
-            'Leidt tot hoog verloop',
-            'Beschadigt relaties',
-            'Vermindert teamcohesie',
-            'Ondermijnt organisatiedoelen'
+            'Toxische organisatiecultuur',
+            'Hoog verloop van talent',
+            'Slechte besluitvorming door gebrek aan input',
+            'Ethische problemen en schandalen',
+            'Verminderde innovatie en creativiteit',
+            'Angst en stress bij medewerkers',
+            'Lange termijn schade aan organisatie'
           ],
-          sportExample: 'Een trainer die spelers publiekelijk vernedert, alle eer opeist voor overwinningen maar spelers de schuld geeft van nederlagen, en geen kritiek accepteert.'
+          sportExample: 'Een trainer die alle eer opeist, spelers vernedert, geen kritiek accepteert van zijn staf, en uiteindelijk het team en de club beschadigt door zijn gedrag.'
         }
       ],
       productiveNarcissistTraits: [
         {
           trait: 'Visionair Leiderschap',
-          description: 'Gebruikt hun zelfvertrouwen om ambitieuze visies te creëren en te communiceren.',
-          application: 'Stelt inspirerende doelen die het team motiveert',
-          balance: 'Zorgt dat de visie realistisch en haalbaar blijft'
+          description: 'Vermogen om inspirerende toekomstbeelden te creëren',
+          application: 'Ontwikkelen van ambitieuze maar haalbare doelen voor het team',
+          balance: 'Zorgen dat de visie gedeeld wordt en niet alleen persoonlijke glorie dient'
         },
         {
-          trait: 'Competitieve Excellence',
-          description: 'Kanaliseert hun competitieve drive naar teamdoelen.',
-          application: 'Gebruikt hun wil om te winnen voor teamsucces',
-          balance: 'Erkent bijdragen van teamleden aan successen'
+          trait: 'Competitieve Drive',
+          description: 'Sterke wil om te winnen en excellentie na te streven',
+          application: 'Kanaliseren van competitieve energie naar teamdoelen',
+          balance: 'Winnen als team, niet als individu - anderen laten delen in succes'
         },
         {
-          trait: 'Charismatische Motivatie',
-          description: 'Gebruikt hun natuurlijke charisma om anderen te inspireren.',
-          application: 'Motiveert teams door persoonlijke uitstraling',
-          balance: 'Ontwikkelt ook andere teamleden als leiders'
+          trait: 'Zelfvertrouwen',
+          description: 'Geloof in eigen capaciteiten en beslissingen',
+          application: 'Moedige beslissingen nemen in moeilijke situaties',
+          balance: 'Zelfvertrouwen combineren met nederigheid en openheid voor feedback'
         },
         {
-          trait: 'Risicobereidheid',
-          description: 'Durft moeilijke beslissingen te nemen die anderen vermijden.',
-          application: 'Neemt berekende risico\'s voor teamvoordeel',
-          balance: 'Luistert naar input van experts en teamleden'
+          trait: 'Charisma en Overtuigingskracht',
+          description: 'Vermogen om anderen te inspireren en mee te krijgen',
+          application: 'Motiveren van teamleden om hun beste prestaties te leveren',
+          balance: 'Charisma gebruiken om anderen te ontwikkelen, niet om te manipuleren'
         }
       ],
       managingNarcissism: {
-        title: 'Narcisme Managen',
-        description: 'Hoe kunnen narcistische leiders hun trekken productief houden?',
+        title: 'Narcisme Managen en Kanaliseren',
+        description: 'Strategieën voor narcistische leiders om productief te blijven:',
         strategies: [
           {
             strategy: 'Empathie Ontwikkelen',
-            description: 'Bewust werken aan begrip voor anderen.',
+            description: 'Bewust werken aan begrip voor anderen',
             implementation: [
               'Actief luisteren naar teamleden',
               'Interesse tonen in persoonlijke ontwikkeling van anderen',
-              'Regelmatig vragen naar feedback',
-              'Tijd besteden aan individuele gesprekken'
+              'Regelmatig vragen naar impact van eigen gedrag',
+              'Tijd besteden aan persoonlijke gesprekken'
             ]
           },
           {
-            strategy: 'Feedback Accepteren',
-            description: 'Openheid creëren voor kritiek en suggesties.',
+            strategy: 'Feedback Zoeken',
+            description: 'Actief op zoek gaan naar eerlijke feedback',
             implementation: [
-              'Regelmatige feedback sessies organiseren',
-              'Veilige omgeving creëren voor kritiek',
-              'Dankbaar reageren op feedback',
-              'Concrete acties ondernemen op basis van input'
+              '360-graden feedback regelmatig gebruiken',
+              'Vertrouwde adviseurs aanstellen die eerlijk zijn',
+              'Vragen naar specifieke verbeterpunten',
+              'Feedback serieus nemen en erop handelen'
             ]
           },
           {
-            strategy: 'Credit Delen',
-            description: 'Erkenning geven aan teamleden voor hun bijdragen.',
+            strategy: 'Anderen Ontwikkelen',
+            description: 'Focus leggen op groei en succes van teamleden',
             implementation: [
-              'Publiekelijk teamleden bedanken',
-              'Successen toeschrijven aan teaminspanning',
-              'Individuele prestaties uitlichten',
-              'Ontwikkelingsmogelijkheden bieden aan anderen'
+              'Mentoring en coaching van teamleden',
+              'Kansen creëren voor anderen om te groeien',
+              'Succes van anderen vieren en erkennen',
+              'Opvolgers ontwikkelen en voorbereiden'
             ]
           },
           {
-            strategy: 'Zelfbewustzijn',
-            description: 'Bewust blijven van eigen narcistische neigingen.',
+            strategy: 'Nederigheid Cultiveren',
+            description: 'Bewust werken aan bescheidenheid en zelfkennis',
             implementation: [
-              'Regelmatige zelfreflectie',
-              'Coaching of mentoring zoeken',
-              'Waarschuwingssignalen herkennen',
-              'Preventieve maatregelen nemen'
+              'Fouten toegeven en ervan leren',
+              'Erkennen van bijdragen van anderen',
+              'Vragen om hulp wanneer nodig',
+              'Eigen beperkingen erkennen'
             ]
           }
         ]
       },
       warningSignals: [
-        'Alleen luisteren naar mensen die het met je eens zijn',
-        'Alle credit opeisen voor successen',
-        'Anderen de schuld geven van mislukkingen',
-        'Weerstand tegen feedback of kritiek',
-        'Gebrek aan interesse in ontwikkeling van anderen',
-        'Zien van teamleden als bedreigingen',
-        'Isolatie van het team',
-        'Focus op persoonlijke roem boven teamdoelen'
+        'Alleen nog luisteren naar mensen die het met je eens zijn',
+        'Verminderde interesse in feedback van anderen',
+        'Toename van impulsieve beslissingen',
+        'Minder aandacht voor ontwikkeling van teamleden',
+        'Verhoogde focus op eigen imago en status',
+        'Verminderde empathie voor problemen van anderen',
+        'Overschatting van eigen bijdrage aan successen',
+        'Weerstand tegen kritiek of alternatieve meningen'
       ],
       developmentPath: [
-        'Herken je narcistische trekken (zowel positieve als negatieve)',
-        'Identificeer hoe deze trekken je team kunnen helpen',
-        'Ontwikkel empathie door actief te luisteren naar anderen',
-        'Creëer systemen voor regelmatige feedback',
-        'Oefen met het delen van credit en erkenning',
-        'Zoek coaching of mentoring voor continue ontwikkeling',
-        'Monitor jezelf op waarschuwingssignalen',
-        'Blijf focussen op teamdoelen boven persoonlijke roem'
+        'Zelfbewustzijn ontwikkelen over narcistische trekken',
+        'Empathie en sociale vaardigheden versterken',
+        'Feedback systemen implementeren en gebruiken',
+        'Focus verleggen van persoonlijk naar team succes',
+        'Anderen ontwikkelen en empoweren',
+        'Nederigheid en zelfkennis cultiveren',
+        'Ethische richtlijnen en waarden centraal stellen',
+        'Continue persoonlijke ontwikkeling nastreven'
       ]
     }
   },
   {
     id: 'ferguson',
-    title: 'Alex Ferguson\'s Leiderschapsfilosofie',
-    description: 'De leiderschapsprincipes van Sir Alex Ferguson, gebaseerd op zijn 26 jaar als manager van Manchester United.',
+    title: 'Alex Ferguson: Leading',
+    description: 'De leiderschapsprincipes van Sir Alex Ferguson, een van de meest succesvolle trainers in de sportgeschiedenis.',
     content: {
       introduction: {
-        title: 'De Meest Succesvolle Manager Ooit',
-        description: 'Sir Alex Ferguson leidde Manchester United 26 jaar lang en won 38 trofeeën. Zijn leiderschapsfilosofie combineert discipline, individuele benadering, lange termijn visie en mentale sterkte.',
-        keyInsight: 'Succes komt niet van één factor, maar van het consistent toepassen van fundamentele leiderschapsprincipes over een lange periode.'
+        title: 'Sir Alex Ferguson: Meesterschap in Leiderschap',
+        description: 'Sir Alex Ferguson leidde Manchester United 26 jaar lang en won 38 trofeeën. Zijn leiderschapsfilosofie combineert discipline, individuele benadering, en lange termijn visie.',
+        keyInsight: 'Succesvol leiderschap vereist een combinatie van onwrikbare principes en flexibele aanpassing aan individuele behoeften.'
       },
       leadershipElements: [
         {
           number: 1,
-          name: 'Discipline en Standaarden',
-          description: 'Ferguson geloofde dat discipline de basis is van elk succesvol team. Regels golden voor iedereen, zonder uitzonderingen.',
+          name: 'Begin met de Basis',
+          description: 'Zorg voor een solide fundament voordat je complexere zaken aanpakt.',
           keyPoints: [
-            'Geen uitzonderingen - zelfs sterren zoals Beckham werden weggestuurd',
-            'Duidelijke verwachtingen voor iedereen',
-            'Consequent handhaven van regels',
-            'Discipline als basis voor vrijheid'
+            'Discipline en structuur zijn fundamenteel',
+            'Duidelijke regels en verwachtingen stellen',
+            'Consistentie in toepassing van regels',
+            'Geen uitzonderingen, ook niet voor sterren'
           ],
-          quote: 'Discipline is not about punishment, it\'s about standards.',
-          example: 'Ferguson stuurde David Beckham weg omdat hij de teamdiscipline ondermijnde, ondanks zijn status als wereldster.'
+          quote: 'Discipline is niet straffen, discipline is training mensen om hun verantwoordelijkheden te vervullen.',
+          example: 'Ferguson stuurde David Beckham weg toen deze de teamdiscipline ondermijnde, ondanks zijn status als ster.'
         },
         {
           number: 2,
-          name: 'Individuele Benadering',
-          description: 'Elke speler is anders en vereist een unieke aanpak. Ferguson paste zijn communicatie aan per persoon.',
+          name: 'Stel Hoge Standaarden',
+          description: 'Verwacht excellentie en accepteer geen middelmatigheid.',
           keyPoints: [
-            'Verschillende motivatietechnieken per speler',
-            'Begrip van persoonlijke achtergronden',
-            'Aanpassing van communicatiestijl',
-            'Individuele ontwikkelingsplannen'
+            'Hoge verwachtingen voor alle aspecten',
+            'Nooit tevreden zijn met "goed genoeg"',
+            'Continue verbetering nastreven',
+            'Voorbeeldgedrag tonen'
           ],
-          quote: 'You have to treat each player as an individual.',
-          example: 'Roy Keane had directe confrontatie nodig, terwijl Ryan Giggs subtiele begeleiding prefereerde.'
+          quote: 'Ik wilde dat spelers wisten dat middelmatigheid niet geaccepteerd werd.',
+          example: 'Ferguson\'s beroemde "hairdryer treatment" - intense kritiek om spelers wakker te schudden wanneer ze onder hun niveau presteerden.'
         },
         {
           number: 3,
-          name: 'De "Hairdryer Treatment"',
-          description: 'Ferguson\'s beroemde intense kritiek was strategisch ingezet, niet uit emotie maar als bewust instrument.',
+          name: 'Individuele Benadering',
+          description: 'Behandel elke persoon anders, afhankelijk van hun persoonlijkheid en behoeften.',
           keyPoints: [
-            'Strategisch gebruik van intense kritiek',
-            'Timing was cruciaal',
-            'Vaak berekend, niet uit echte boosheid',
-            'Bedoeld om spelers wakker te schudden'
+            'Verschillende motivatietechnieken voor verschillende mensen',
+            'Begrip van individuele persoonlijkheden',
+            'Aanpassing van communicatiestijl',
+            'Respect voor individuele verschillen'
           ],
-          quote: 'Sometimes you have to be hard to be kind.',
-          example: 'De beroemde "hairdryer" tijdens rust tegen Arsenal in 1999, wat leidde tot een comeback en de treble.'
+          quote: 'Je kunt niet iedereen hetzelfde behandelen. Wat werkt voor de een, werkt niet voor de ander.',
+          example: 'Roy Keane had directe confrontatie nodig, terwijl Ryan Giggs subtiele begeleiding prefereerde.'
         },
         {
           number: 4,
-          name: 'Lange Termijn Visie',
-          description: 'Ferguson dacht altijd in jaren, niet in wedstrijden. Hij bouwde voor de toekomst.',
+          name: 'Observatie en Informatie',
+          description: 'Verzamel voortdurend informatie over je team en omgeving.',
           keyPoints: [
-            'Investering in jeugdacademie',
-            'Opbouw van duurzame systemen',
-            'Voorbereiding van opvolgers',
-            'Cultuur die generaties overstijgt'
+            'Constante observatie van spelers en situaties',
+            'Informatie verzamelen uit verschillende bronnen',
+            'Anticiperen op problemen voordat ze ontstaan',
+            'Gebruik van data en analyse'
           ],
-          quote: 'I never think about today, I think about tomorrow.',
-          example: 'De Class of \'92 (Beckham, Scholes, Giggs, etc.) kwam voort uit zijn lange termijn investering in jeugd.'
+          quote: 'Informatie is macht. Hoe meer je weet, hoe betere beslissingen je kunt nemen.',
+          example: 'Ferguson observeerde spelers tijdens training, reizen, en sociale situaties om hun mentale staat te begrijpen.'
         },
         {
           number: 5,
-          name: 'Mentale Sterkte',
-          description: 'Ferguson geloofde dat mentale kracht belangrijker was dan technische vaardigheden.',
+          name: 'Timing van Interventies',
+          description: 'Weet wanneer je moet ingrijpen en wanneer je moet afwachten.',
           keyPoints: [
-            'Veerkracht bij tegenslagen',
-            'Geloof in comeback mogelijkheden',
-            'Mentale voorbereiding op druk',
-            'Cultuur van "never give up"'
+            'Strategisch gebruik van kritiek en lof',
+            'Juiste moment kiezen voor moeilijke gesprekken',
+            'Geduld hebben wanneer nodig',
+            'Beslissend handelen in cruciale momenten'
           ],
-          quote: 'Football is a game of mistakes. Whoever makes the fewest mistakes wins.',
-          example: 'Manchester United stond bekend om late goals en comebacks - "Fergie Time" werd een begrip.'
+          quote: 'Timing is alles in management. Te vroeg of te laat kan het verschil maken tussen succes en falen.',
+          example: 'Ferguson wachtte vaak tot rust om kritiek te geven, zodat spelers tijd hadden om te reflecteren.'
         },
         {
           number: 6,
-          name: 'Controle en Autoriteit',
-          description: 'Ferguson behield altijd de ultieme controle, maar delegeerde waar nodig.',
+          name: 'Lange Termijn Visie',
+          description: 'Denk verder dan het huidige seizoen en bouw voor de toekomst.',
           keyPoints: [
-            'Duidelijke hiërarchie',
-            'Delegatie met behoud van controle',
-            'Autoriteit door respect, niet angst',
-            'Beslissende momenten zelf nemen'
+            'Investeren in jeugdontwikkeling',
+            'Opbouwen van duurzame systemen',
+            'Planning voor opvolging',
+            'Balans tussen korte en lange termijn doelen'
           ],
-          quote: 'The manager is the most important person at the club.',
-          example: 'Ferguson nam alle belangrijke beslissingen zelf, maar gaf zijn assistenten ruimte in hun specialisaties.'
+          quote: 'Ik bouwde niet alleen een team, ik bouwde een organisatie die generaties zou overstijgen.',
+          example: 'Ferguson\'s investering in de jeugdacademie leverde spelers op zoals Beckham, Scholes, en Giggs.'
         },
         {
           number: 7,
-          name: 'Aanpassingsvermogen',
-          description: 'Ferguson paste zijn tactieken, spelers en aanpak aan gedurende zijn carrière.',
+          name: 'Omgaan met Tegenslagen',
+          description: 'Gebruik tegenslagen als leermomenten en motivatie.',
           keyPoints: [
-            'Evolutie van speelstijl',
-            'Aanpassing aan nieuwe generaties',
-            'Flexibiliteit in tactieken',
-            'Leren van nederlagen'
+            'Veerkracht en mentale sterkte ontwikkelen',
+            'Leren van nederlagen en fouten',
+            'Team motiveren na teleurstellingen',
+            'Focus op volgende uitdaging'
           ],
-          quote: 'The game is always changing, and you have to change with it.',
-          example: 'Ferguson veranderde van een aanvallende 4-4-2 naar meer tactische flexibiliteit in zijn latere jaren.'
+          quote: 'Het gaat er niet om hoe vaak je valt, maar hoe vaak je opstaat.',
+          example: 'Na de Champions League finale verlies in 2009, gebruikte Ferguson dit als motivatie voor het volgende seizoen.'
         },
         {
           number: 8,
-          name: 'Teamcultuur',
-          description: 'Ferguson creëerde een winnende cultuur die groter was dan individuele spelers.',
+          name: 'Delegeren en Vertrouwen',
+          description: 'Geef verantwoordelijkheid aan anderen en vertrouw op hun capaciteiten.',
           keyPoints: [
-            'Cultuur van excellentie',
-            'Teambelang boven individueel belang',
-            'Tradities en rituelen',
-            'Trots op de club'
+            'Juiste mensen op juiste posities',
+            'Vertrouwen geven en ruimte voor groei',
+            'Niet alles zelf willen controleren',
+            'Ontwikkelen van leiderschap in anderen'
           ],
-          quote: 'The culture of the club is more important than any individual.',
-          example: 'Nieuwe spelers werden geïndoctrineerd in de "United Way" - een cultuur van hard werk en winnen.'
+          quote: 'Als je goede mensen hebt, geef ze dan de ruimte om te excelleren.',
+          example: 'Ferguson gaf ervaren spelers zoals Keane en Scholes leiderschapsrollen binnen het team.'
         },
         {
           number: 9,
-          name: 'Timing en Intuïtie',
-          description: 'Ferguson had een uitzonderlijk gevoel voor timing in beslissingen en substituties.',
+          name: 'Continue Vernieuwing',
+          description: 'Blijf innoveren en aanpassen aan veranderende omstandigheden.',
           keyPoints: [
-            'Perfecte timing van substituties',
-            'Intuïtief aanvoelen van momentum',
-            'Juiste moment voor veranderingen',
-            'Gevoel voor psychologie van het spel'
+            'Openheid voor nieuwe ideeën en methoden',
+            'Aanpassing aan veranderende omgeving',
+            'Investeren in nieuwe technologieën',
+            'Leren van anderen en andere sectoren'
           ],
-          quote: 'Timing in football is everything.',
-          example: 'Zijn substituties in de Champions League finale van 1999 leidden tot twee late goals en de overwinning.'
+          quote: 'Stilstand is achteruitgang. Je moet altijd blijven evolueren.',
+          example: 'Ferguson paste zijn tactiek en trainingsmethoden aan gedurende zijn carrière, van 4-4-2 naar meer flexibele systemen.'
         }
       ],
       corePhilosophy: {
         title: 'Ferguson\'s Kernfilosofie',
-        description: 'De onderliggende principes die al zijn beslissingen stuurden.',
+        description: 'De fundamentele principes die Ferguson\'s succes onderbouwden:',
         principles: [
-          'Winnen is een gewoonte, niet een toeval',
-          'Discipline creëert vrijheid om te presteren',
-          'Individuele talenten moeten dienstbaar zijn aan teamdoelen',
-          'Lange termijn succes vereist korte termijn offers',
-          'Mentale sterkte is de basis van alle prestaties',
-          'Cultuur en waarden zijn belangrijker dan individuele sterren',
-          'Continue verbetering en aanpassing zijn essentieel',
-          'Leiderschap betekent verantwoordelijkheid nemen'
+          'Discipline en respect zijn de basis van alles',
+          'Individuele benadering binnen teamkader',
+          'Lange termijn denken en geduld',
+          'Mentale sterkte is belangrijker dan techniek',
+          'Continue verbetering en leren',
+          'Loyaliteit verdien je, je krijgt het niet',
+          'Leiderschap betekent verantwoordelijkheid nemen',
+          'Succes is een team prestatie, falen is individuele verantwoordelijkheid'
         ]
       },
       modernApplications: {
         title: 'Moderne Toepassingen',
-        description: 'Hoe Ferguson\'s principes vandaag nog steeds relevant zijn.',
+        description: 'Hoe Ferguson\'s principes toegepast kunnen worden in hedendaagse organisaties:',
         applications: [
           {
-            context: 'Moderne sportteams',
-            approach: 'Combinatie van data-analyse met Ferguson\'s intuïtieve mensen-management',
-            result: 'Betere balans tussen technologie en menselijke factoren'
-          },
-          {
             context: 'Bedrijfsleiderschap',
-            approach: 'Toepassing van individuele benadering en lange termijn visie',
-            result: 'Hogere medewerkerbetrokkenheid en duurzame groei'
+            approach: 'Combineer hoge standaarden met individuele ontwikkeling',
+            result: 'Verhoogde prestaties en medewerkertevredenheid'
           },
           {
-            context: 'Jeugdcoaching',
-            approach: 'Focus op mentale ontwikkeling naast technische vaardigheden',
-            result: 'Veerkrachtigere en meer zelfverzekerde jonge atleten'
+            context: 'Teammanagement',
+            approach: 'Gebruik verschillende motivatietechnieken per teamlid',
+            result: 'Betere teamdynamiek en individuele groei'
+          },
+          {
+            context: 'Verandermanagement',
+            approach: 'Lange termijn visie met korte termijn wins',
+            result: 'Succesvolle transformatie met draagvlak'
           },
           {
             context: 'Crisismanagement',
-            approach: 'Ferguson\'s discipline en duidelijke communicatie onder druk',
-            result: 'Effectievere besluitvorming in moeilijke tijden'
+            approach: 'Mentale sterkte en focus op oplossingen',
+            result: 'Sneller herstel en sterker team'
           }
         ]
       },
       keyLessons: [
-        'Consistentie in principes is belangrijker dan perfecte tactieken',
-        'Discipline en vrijheid zijn geen tegenstellingen maar complementair',
-        'Individuele benadering verhoogt teamprestaties',
-        'Lange termijn denken creëert duurzaam succes',
-        'Mentale sterkte kan worden ontwikkeld en getraind',
-        'Cultuur is de basis van alle andere successen',
-        'Aanpassingsvermogen is essentieel voor langdurig succes',
-        'Leiderschap vereist moed om moeilijke beslissingen te nemen'
+        'Discipline en flexibiliteit kunnen samengaan',
+        'Individuele benadering verhoogt teameffectiviteit',
+        'Lange termijn visie vereist korte termijn offers',
+        'Mentale sterkte is vaak belangrijker dan technische vaardigheden',
+        'Leiderschap betekent verantwoordelijkheid nemen voor resultaten',
+        'Continue observatie en aanpassing zijn essentieel',
+        'Timing van interventies bepaalt hun effectiviteit',
+        'Opvolging en duurzaamheid moeten vanaf het begin gepland worden'
       ]
     }
   },
   {
     id: 'wiltschut',
-    title: 'Gezag vs Dominantie (Van Vugt & Wiltschut)',
-    description: 'Het onderscheid tussen gezag (gewenst) en dominantie (vermijden) in leiderschapsgedrag.',
+    title: 'Van Vugt & Wiltschut: Gezag vs Dominantie',
+    description: 'Het verschil tussen gezag (gewenst) en dominantie (vermijden) in leiderschap volgens Van Vugt en Wiltschut.',
     content: {
-      mainConcept: 'Effectief leiderschap draait om het opbouwen van gezag (gebaseerd op respect) in plaats van dominantie (gebaseerd op macht en controle).',
+      mainConcept: 'Effectief leiderschap is gebaseerd op gezag (respect en vertrouwen) in plaats van dominantie (macht en controle). Gezag leidt tot betere prestaties en welzijn van het team.',
       gezag: [
         {
           characteristic: 'Gebaseerd op Respect',
           description: 'Mensen volgen je omdat ze je respecteren en vertrouwen',
-          sportExample: 'Een aanvoerder die wordt gerespecteerd om zijn ervaring en wijsheid'
+          sportExample: 'Een aanvoerder die door zijn integriteit en competentie natuurlijk wordt gevolgd door teamgenoten'
         },
         {
-          characteristic: 'Verdiend Leiderschap',
-          description: 'Autoriteit komt voort uit competentie en integriteit',
-          sportExample: 'Een trainer die gezag heeft door zijn kennis en eerlijke behandeling'
+          characteristic: 'Competentie en Expertise',
+          description: 'Leiderschap komt voort uit kennis en vaardigheden',
+          sportExample: 'Een trainer wiens tactische inzichten en ervaring door spelers worden gewaardeerd'
         },
         {
-          characteristic: 'Vrijwillige Volgzaamheid',
-          description: 'Teamleden kiezen ervoor om je te volgen',
-          sportExample: 'Spelers die extra moeite doen omdat ze geloven in de coach'
+          characteristic: 'Dienend Leiderschap',
+          description: 'Focus ligt op het helpen en ontwikkelen van anderen',
+          sportExample: 'Een coach die prioriteit geeft aan de ontwikkeling van individuele spelers'
         },
         {
-          characteristic: 'Empowerment',
-          description: 'Geeft anderen de ruimte om te groeien en bij te dragen',
-          sportExample: 'Een captain die andere spelers laat leiden in hun sterke punten'
+          characteristic: 'Inspiratie en Motivatie',
+          description: 'Motiveert anderen door visie en voorbeeld',
+          sportExample: 'Een teamleider die anderen inspireert door zijn toewijding en positieve houding'
         },
         {
-          characteristic: 'Duurzame Invloed',
-          description: 'Invloed blijft bestaan ook zonder directe aanwezigheid',
-          sportExample: 'Spelers die de waarden van hun coach uitdragen, ook als hij er niet is'
+          characteristic: 'Empathie en Luisteren',
+          description: 'Toont begrip en interesse voor anderen',
+          sportExample: 'Een trainer die tijd neemt om naar de zorgen van spelers te luisteren'
         }
       ],
       dominantie: [
         {
           characteristic: 'Gebaseerd op Macht',
-          description: 'Mensen volgen je uit angst of omdat ze moeten',
-          sportExample: 'Een trainer die alleen door intimidatie en straffen leidt'
+          description: 'Mensen volgen uit angst of omdat ze moeten',
+          sportExample: 'Een trainer die spelers intimideert en dreigt met consequenties'
         },
         {
-          characteristic: 'Opgelegde Autoriteit',
-          description: 'Autoriteit komt alleen voort uit positie of dwang',
-          sportExample: 'Een aanvoerder die alleen leidt omdat hij is aangewezen'
+          characteristic: 'Controle en Dwang',
+          description: 'Gebruikt positie om anderen te controleren',
+          sportExample: 'Een aanvoerder die zijn status gebruikt om anderen te onderdrukken'
         },
         {
-          characteristic: 'Gedwongen Gehoorzaamheid',
-          description: 'Mensen gehoorzamen uit angst voor consequenties',
-          sportExample: 'Spelers die alleen presteren uit angst voor straf'
+          characteristic: 'Eigenbelang',
+          description: 'Focus ligt op eigen succes en status',
+          sportExample: 'Een coach die alleen geïnteresseerd is in zijn eigen reputatie'
         },
         {
-          characteristic: 'Onderdrukking',
-          description: 'Beperkt de groei en bijdrage van anderen',
-          sportExample: 'Een coach die geen input accepteert van spelers of assistenten'
+          characteristic: 'Intimidatie en Agressie',
+          description: 'Gebruikt agressief gedrag om anderen te beïnvloeden',
+          sportExample: 'Een trainer die schreeuwt en spelers vernedert voor de groep'
         },
         {
-          characteristic: 'Tijdelijke Invloed',
-          description: 'Invloed verdwijnt zodra de macht wegvalt',
-          sportExample: 'Spelers die rebelleren zodra de strenge trainer vertrekt'
+          characteristic: 'Gebrek aan Empathie',
+          description: 'Weinig interesse in gevoelens en behoeften van anderen',
+          sportExample: 'Een teamleider die geen rekening houdt met persoonlijke omstandigheden van spelers'
         }
       ],
       consequences: {
-        gezag: 'Leidt tot gemotiveerde teams, duurzame prestaties, persoonlijke groei van teamleden, en een positieve cultuur waar mensen hun beste zelf kunnen zijn.',
-        dominantie: 'Resulteert in angst, verminderde creativiteit, hoog verloop, burnout, en teams die alleen functioneren onder directe controle.'
+        gezag: 'Leidt tot verhoogde motivatie, betere prestaties, meer creativiteit, sterke teamcohesie, en duurzaam succes. Teamleden voelen zich gewaardeerd en ontwikkelen zich optimaal.',
+        dominantie: 'Resulteert in angst, stress, verminderde creativiteit, hoog verloop, en korte termijn resultaten ten koste van lange termijn succes. Teamleden voelen zich onderdrukt en presteren onder hun niveau.'
       },
       developingAuthority: [
-        'Bouw expertise op in je vakgebied',
-        'Toon integriteit in al je handelingen',
-        'Luister actief naar je teamleden',
-        'Geef anderen de ruimte om te groeien',
-        'Wees consistent in je gedrag en beslissingen',
-        'Toon empathie en begrip voor anderen',
-        'Neem verantwoordelijkheid voor je fouten',
-        'Investeer in de ontwikkeling van je team',
-        'Communiceer duidelijk en eerlijk',
-        'Leef de waarden voor die je predikt'
+        'Ontwikkel je competenties en expertise continu',
+        'Toon oprechte interesse in de ontwikkeling van anderen',
+        'Wees consistent en betrouwbaar in je gedrag',
+        'Luister actief en toon empathie',
+        'Geef het goede voorbeeld in houding en gedrag',
+        'Erken en waardeer de bijdragen van anderen',
+        'Wees transparant in je besluitvorming',
+        'Investeer in persoonlijke relaties met teamleden',
+        'Focus op het dienen van het team in plaats van jezelf',
+        'Blijf nederig en open voor feedback'
       ]
     }
   }
@@ -1078,7 +1376,7 @@ export default function LeadershipApp() {
   const [quizCompleted, setQuizCompleted] = useState(false)
   const [quizScore, setQuizScore] = useState<{score: number, total: number} | null>(null)
 
-  // Load progress from localStorage on component mount
+  // Load progress from localStorage
   useEffect(() => {
     const savedReadTheories = localStorage.getItem('readTheories')
     const savedPoints = localStorage.getItem('points')
@@ -1099,31 +1397,21 @@ export default function LeadershipApp() {
     }
   }, [])
 
-  // Save progress to localStorage whenever state changes
+  // Save progress to localStorage
   useEffect(() => {
     localStorage.setItem('readTheories', JSON.stringify(Array.from(readTheories)))
-  }, [readTheories])
-
-  useEffect(() => {
     localStorage.setItem('points', points.toString())
-  }, [points])
-
-  useEffect(() => {
     localStorage.setItem('quizCompleted', JSON.stringify(quizCompleted))
-  }, [quizCompleted])
-
-  useEffect(() => {
     if (quizScore) {
       localStorage.setItem('quizScore', JSON.stringify(quizScore))
     }
-  }, [quizScore])
+  }, [readTheories, points, quizCompleted, quizScore])
 
   const handleTheoryClick = (theoryId: string) => {
     if (selectedTheory === theoryId) {
       setSelectedTheory(null)
     } else {
       setSelectedTheory(theoryId)
-      setShowQuiz(false)
     }
   }
 
@@ -1135,10 +1423,12 @@ export default function LeadershipApp() {
   }
 
   const handleQuizComplete = (score: number, totalQuestions: number) => {
-    setQuizCompleted(true)
-    setQuizScore({ score, total: totalQuestions })
-    const quizPoints = score * 10 // 10 points per correct answer
-    setPoints(prev => prev + quizPoints)
+    if (!quizCompleted) {
+      setQuizCompleted(true)
+      setQuizScore({score, total: totalQuestions})
+      const quizPoints = score * 10 // 10 points per correct answer
+      setPoints(prev => prev + quizPoints)
+    }
   }
 
   const resetProgress = () => {
@@ -1154,8 +1444,7 @@ export default function LeadershipApp() {
     localStorage.removeItem('quizScore')
   }
 
-  const allTheoriesRead = readTheories.size === theories.length
-  const canTakeQuiz = allTheoriesRead && !quizCompleted
+  const progressPercentage = Math.round(((readTheories.size / theories.length) + (quizCompleted ? 1 : 0)) / (theories.length + 1) * 100)
 
   return (
     <div className="container mx-auto px-4 py-8 max-w-6xl">
@@ -1165,7 +1454,7 @@ export default function LeadershipApp() {
           🏆 Leiderschap in de Sport
         </h1>
         <p className="text-xl text-gray-600 mb-6">
-          Voor HBO Sportkunde Studenten
+          HBO Sportkunde - Leiderschapstheorieën
         </p>
         
         {/* Progress Dashboard */}
@@ -1173,84 +1462,72 @@ export default function LeadershipApp() {
           <div className="grid md:grid-cols-4 gap-4 text-center">
             <div className="bg-blue-50 p-4 rounded-lg">
               <div className="text-2xl font-bold text-blue-600">{points}</div>
-              <div className="text-sm text-gray-600">Totaal Punten</div>
+              <div className="text-sm text-gray-600">Punten</div>
             </div>
             <div className="bg-green-50 p-4 rounded-lg">
               <div className="text-2xl font-bold text-green-600">{readTheories.size}/{theories.length}</div>
               <div className="text-sm text-gray-600">Theorieën Gelezen</div>
             </div>
             <div className="bg-purple-50 p-4 rounded-lg">
-              <div className="text-2xl font-bold text-purple-600">
-                {quizCompleted ? '✅' : canTakeQuiz ? '🎯' : '🔒'}
-              </div>
+              <div className="text-2xl font-bold text-purple-600">{quizCompleted ? '✅' : '⏳'}</div>
               <div className="text-sm text-gray-600">Quiz Status</div>
             </div>
             <div className="bg-orange-50 p-4 rounded-lg">
-              <div className="text-2xl font-bold text-orange-600">
-                {quizScore ? `${Math.round((quizScore.score / quizScore.total) * 100)}%` : '-'}
-              </div>
-              <div className="text-sm text-gray-600">Quiz Score</div>
+              <div className="text-2xl font-bold text-orange-600">{progressPercentage}%</div>
+              <div className="text-sm text-gray-600">Voortgang</div>
             </div>
           </div>
           
-          {/* Progress Bar */}
           <div className="mt-4">
-            <div className="flex justify-between text-sm text-gray-600 mb-2">
-              <span>Voortgang</span>
-              <span>{Math.round(((readTheories.size + (quizCompleted ? 1 : 0)) / (theories.length + 1)) * 100)}%</span>
-            </div>
             <div className="w-full bg-gray-200 rounded-full h-3">
               <div 
                 className="bg-gradient-to-r from-blue-500 to-green-500 h-3 rounded-full transition-all duration-500"
-                style={{ width: `${((readTheories.size + (quizCompleted ? 1 : 0)) / (theories.length + 1)) * 100}%` }}
+                style={{ width: `${progressPercentage}%` }}
               ></div>
             </div>
           </div>
 
-          {/* Action Buttons */}
-          <div className="mt-6 flex flex-wrap gap-4 justify-center">
-            {canTakeQuiz && (
-              <button
-                onClick={() => {
-                  setShowQuiz(true)
-                  setSelectedTheory(null)
-                }}
-                className="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-medium"
-              >
-                🎯 Start Quiz (Verdien extra punten!)
-              </button>
-            )}
-            
-            {!allTheoriesRead && (
-              <div className="text-center text-gray-600">
-                <p className="text-sm">📚 Lees alle theorieën om de quiz te ontgrendelen</p>
-              </div>
-            )}
-
-            <button
-              onClick={resetProgress}
-              className="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors text-sm"
-            >
-              🔄 Reset Voortgang
-            </button>
-          </div>
+          {quizScore && (
+            <div className="mt-4 p-3 bg-green-50 rounded-lg border-l-4 border-green-400">
+              <p className="text-green-800 font-medium">
+                🎉 Quiz voltooid: {quizScore.score}/{quizScore.total} correct ({Math.round((quizScore.score / quizScore.total) * 100)}%)
+              </p>
+            </div>
+          )}
         </div>
       </div>
 
-      {/* Quiz Section */}
-      {showQuiz && (
-        <div className="mb-8">
-          <QuizComponent onComplete={handleQuizComplete} />
-        </div>
-      )}
+      {/* Navigation */}
+      <div className="flex flex-wrap justify-center gap-4 mb-8">
+        <button
+          onClick={() => {setShowQuiz(false); setSelectedTheory(null)}}
+          className={`px-6 py-3 rounded-lg font-medium transition-colors ${
+            !showQuiz ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+          }`}
+        >
+          📚 Theorieën
+        </button>
+        <button
+          onClick={() => {setShowQuiz(true); setSelectedTheory(null)}}
+          className={`px-6 py-3 rounded-lg font-medium transition-colors ${
+            showQuiz ? 'bg-purple-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+          }`}
+        >
+          🎯 Quiz
+        </button>
+        <button
+          onClick={resetProgress}
+          className="px-6 py-3 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors font-medium"
+        >
+          🔄 Reset Voortgang
+        </button>
+      </div>
 
-      {/* Theories Grid */}
-      {!showQuiz && (
+      {/* Content */}
+      {showQuiz ? (
+        <QuizComponent onComplete={handleQuizComplete} />
+      ) : (
         <div className="space-y-6">
-          <h2 className="text-2xl font-bold text-gray-800 text-center mb-6">
-            📚 Leiderschapstheorieën
-          </h2>
-          
           {theories.map((theory) => (
             <div key={theory.id} onClick={() => handleTheoryClick(theory.id)} className="cursor-pointer">
               <TheoryCard
@@ -1265,9 +1542,10 @@ export default function LeadershipApp() {
       )}
 
       {/* Footer */}
-      <div className="text-center mt-12 text-gray-500">
-        <p>💜 Gemaakt door Tom Naberink voor HBO Sportkunde</p>
-        <p className="text-sm mt-2">Gebaseerd op de leiderschapstheorieën uit de cursus</p>
+      <div className="text-center mt-12 pt-8 border-t border-gray-200">
+        <p className="text-gray-500 text-sm">
+          💜 Gemaakt door Tom Naberink - HBO Sportkunde Leiderschapsmodule
+        </p>
       </div>
     </div>
   )
