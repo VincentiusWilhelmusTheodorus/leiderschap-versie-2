@@ -1,3 +1,5 @@
+'use client'
+
 import { useState } from 'react'
 import TheoryCard from './TheoryCard'
 import QuizComponent from './QuizComponent'
